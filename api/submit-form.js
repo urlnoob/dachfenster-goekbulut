@@ -13,7 +13,12 @@ export default async function handler(req, res) {
       roofType,
       windowCount,
       installationType,
-      insulation
+      insulation,
+      // Alternative field names from frontend
+      dachform,
+      anzahl_dachfenster,
+      austausch_neueinbau,
+      isolierung
     } = req.body;
 
     // Validate required fields
@@ -27,10 +32,10 @@ export default async function handler(req, res) {
       phone: phone.trim(),
       email: email.trim(),
       postleitzahl: postleitzahl.trim(),
-      roofType: roofType || 'Nicht angegeben',
-      windowCount: windowCount || 'Nicht angegeben',
-      installationType: installationType || 'Nicht angegeben',
-      insulation: insulation || 'Nicht angegeben',
+      roofType: roofType || dachform || 'Nicht angegeben',
+      windowCount: windowCount || anzahl_dachfenster || 'Nicht angegeben',
+      installationType: installationType || austausch_neueinbau || 'Nicht angegeben',
+      insulation: insulation || isolierung || 'Nicht angegeben',
       timestamp: new Date().toISOString(),
       source: 'Website Formular'
     };

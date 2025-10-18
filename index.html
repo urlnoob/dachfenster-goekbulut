@@ -1803,6 +1803,7 @@
                     // Store selection
                     const question = getQuestionForStep(currentStep);
                     formData[question] = this.dataset.value;
+                    console.log('Stored:', question, '=', this.dataset.value);
                     
                     // Auto-advance to next step after a short delay
                     setTimeout(() => {
@@ -1849,6 +1850,8 @@
                         submitBtn.textContent = 'Wird gesendet...';
                         submitBtn.disabled = true;
                     }
+                    
+                    console.log('Submitting formData:', formData);
                     
                     const response = await fetch('/api/submit-form', {
                         method: 'POST',
