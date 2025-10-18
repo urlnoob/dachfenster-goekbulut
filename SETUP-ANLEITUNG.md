@@ -25,14 +25,31 @@ echo "ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/YO
 #### Für Vercel Production:
 - Gehe zu deinem Vercel Project Dashboard
 - Klicke auf "Settings" → "Environment Variables"
-- Füge hinzu: `ZAPIER_WEBHOOK_URL` = `https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_KEY/`
+- Füge hinzu:
+  - `ZAPIER_WEBHOOK_URL` = `https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_KEY/`
+  - `FACEBOOK_PIXEL_ID` = `YOUR_PIXEL_ID`
 
 ### Schritt 4: Zap vervollständigen
 - Füge eine Action hinzu (z.B. Google Sheets, Email, CRM)
 - Teste den Zap
 - Aktiviere den Zap
 
-## 2. Vercel Deployment
+## 2. Facebook Pixel Setup
+
+### Schritt 1: Pixel ID finden
+- Gehe zu [Facebook Business Manager](https://business.facebook.com)
+- Events Manager → Datenquellen → Pixel
+- Kopiere deine Pixel ID
+
+### Schritt 2: Environment Variable setzen
+- **Lokal**: Füge `FACEBOOK_PIXEL_ID=YOUR_PIXEL_ID` zu `.env.local` hinzu
+- **Vercel**: Füge die Environment Variable im Dashboard hinzu
+
+### Schritt 3: Domain hinzufügen
+- In Events Manager → Pixel Settings
+- Füge `dachfenster.dachdeckermeister-goekbulut.de` zu den zugelassenen Domains hinzu
+
+## 3. Vercel Deployment
 
 ### Schritt 1: Vercel Account
 - Gehe zu [vercel.com](https://vercel.com)

@@ -6,6 +6,12 @@
     <title>Dachfenster Einbau & Austausch Stadtoldendorf | DDG Gökbulut - VELUX Partner</title>
     <meta name="description" content="Professioneller Dachfenster Einbau & Austausch vom Meisterbetrieb. 25 Jahre Erfahrung, VELUX Partner. Jetzt 20% Jubiläums-Rabatt sichern!">
     
+    <!-- Facebook Pixel Code -->
+    <script src="/js/facebook-pixel.js"></script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    /></noscript>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -311,7 +317,7 @@
                             
                             <!-- CTA Button -->
                             <div class="mt-8 pt-6 border-t border-gray-100">
-                                <a href="#kontakt" class="block w-full bg-gradient-to-r from-brand-red to-red-700 text-white py-4 px-6 rounded-xl font-bold text-center hover:from-red-600 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                                <a href="#kontakt" onclick="if(window.facebookPixel) window.facebookPixel.trackInitiateCheckout({content_name: 'Mobile Menu CTA'});" class="block w-full bg-gradient-to-r from-brand-red to-red-700 text-white py-4 px-6 rounded-xl font-bold text-center hover:from-red-600 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                                     Kostenloses Angebot
                                 </a>
                             </div>
@@ -537,7 +543,7 @@
 
                 <!-- CTA -->
                 <div class="text-center">
-                    <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
+                    <a href="#kontakt" onclick="if(window.facebookPixel) window.facebookPixel.trackInitiateCheckout({content_name: 'Hero CTA'});" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
                         <span>Kostenloses Angebot anfordern</span>
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -1845,6 +1851,14 @@
                     });
                     
                     if (response.ok) {
+                        // Track form submission as Lead event
+                        if (window.facebookPixel) {
+                            window.facebookPixel.trackLead({
+                                content_name: 'Dachfenster Anfrage - Form Submission',
+                                content_category: 'Multi-Step Form'
+                            });
+                        }
+                        
                         // Redirect to thank you page
                         window.location.href = 'danke.html';
                     } else {

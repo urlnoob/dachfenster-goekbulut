@@ -5,5 +5,10 @@
 # Get this from your Zapier webhook: https://zapier.com/apps/webhooks/help
 ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/12345678/abcdefgh/
 
+# Facebook Pixel ID
+# Get this from Facebook Business Manager → Events Manager → Pixel
+FACEBOOK_PIXEL_ID=123456789012345
+
 # Optional: Add more configuration variables here
 # NODE_ENV=development
+# GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
