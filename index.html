@@ -269,7 +269,7 @@
                     <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
                     
                     <!-- Menu panel -->
-                    <div class="relative h-full w-full max-w-sm ml-auto bg-gray-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+                    <div class="relative h-screen w-full bg-gray-50 shadow-2xl overflow-y-auto">
                         <!-- Header with gradient -->
                         <div class="bg-gradient-to-br from-brand-red to-red-700 p-6 pb-8">
                             <div class="flex justify-between items-center mb-6">
@@ -312,6 +312,12 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                     Referenzen
+                                </a>
+                                <a href="#kontakt" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    Kontakt
                                 </a>
                             </nav>
                             
@@ -405,7 +411,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
-                        <a href="tel:05532123456" class="inline-flex items-center justify-center bg-white border-2 border-gray-200 text-gray-800 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:border-brand-red hover:text-brand-red transition-all shadow-soft min-h-[56px]">
+                        <a href="tel:05532999537" onclick="if(window.facebookPixel) window.facebookPixel.trackInitiateCheckout({content_name: 'Hero Phone Call CTA'});" class="inline-flex items-center justify-center bg-white border-2 border-gray-200 text-gray-800 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:border-brand-red hover:text-brand-red transition-all shadow-soft min-h-[56px]">
                             <span>📞 Direkt anrufen</span>
                         </a>
                     </div>
@@ -1354,7 +1360,7 @@
                                 <img src="images/photos/oemer-goekbulut.png" alt="Ömer Gökbulut" class="w-full h-full object-cover object-left">
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500 mb-1">DEIN ANSPRECHPARTNER</p>
+                                <p class="text-sm text-gray-500 mb-1">IHR ANSPRECHPARTNER</p>
                                 <p class="text-lg font-bold text-brand-dark">Ömer Gökbulut</p>
                                 <p class="text-sm text-gray-600">Dachdeckermeister</p>
                             </div>
@@ -1885,21 +1891,18 @@
             const mobileMenuClose = document.getElementById('mobile-menu-close');
 
             if (mobileMenuBtn && mobileMenu && mobileMenuClose) {
-                // Open menu with smooth animation
+                // Open menu
                 mobileMenuBtn.addEventListener('click', function() {
                     mobileMenu.classList.remove('hidden');
-                    // Add smooth slide-in effect
-                    setTimeout(() => {
-                        mobileMenu.querySelector('.relative').style.transform = 'translateX(0)';
-                    }, 10);
+                    // Prevent body scrolling
+                    document.body.style.overflow = 'hidden';
                 });
 
-                // Close menu with smooth animation
+                // Close menu
                 const closeMenu = () => {
-                    mobileMenu.querySelector('.relative').style.transform = 'translateX(100%)';
-                    setTimeout(() => {
-                        mobileMenu.classList.add('hidden');
-                    }, 300);
+                    // Restore body scrolling
+                    document.body.style.overflow = '';
+                    mobileMenu.classList.add('hidden');
                 };
 
                 mobileMenuClose.addEventListener('click', closeMenu);
@@ -2187,15 +2190,30 @@
     </footer>
 
     <!-- Sticky Mobile CTA -->
-    <div class="fixed bottom-0 left-0 right-0 bg-brand-red text-white p-4 shadow-strong z-50 lg:hidden backdrop-blur-md">
-        <div class="flex items-center justify-between container mx-auto">
-            <div class="text-sm font-bold">
-                <div class="text-xs opacity-75">Jubiläums-Angebot</div>
-                <div>20% Rabatt sichern!</div>
+    <!-- Mobile/Tablet Sticky Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-brand-red to-red-700 text-white shadow-2xl z-50 lg:hidden backdrop-blur-md border-t border-red-600">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Left: Offer Info -->
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        </div>
+                        <div class="min-w-0">
+                            <div class="text-xs opacity-90 font-medium">Nur noch 18 Plätze frei!</div>
+                            <div class="text-sm font-bold truncate">Bis zu 35% sparen</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: CTA Button -->
+                <div class="flex-shrink-0 ml-4">
+                    <a href="#kontakt" onclick="if(window.facebookPixel) window.facebookPixel.trackInitiateCheckout({content_name: 'Mobile Sticky CTA'});" class="bg-white text-brand-red px-4 py-2.5 rounded-full font-bold text-sm shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95 whitespace-nowrap">
+                        Jetzt sichern
+                    </a>
+                </div>
             </div>
-            <a href="#kontakt" class="bg-white text-brand-red px-6 py-3 rounded-full font-bold text-sm shadow-lg hover:bg-gray-100 transition-colors">
-                Angebot
-            </a>
         </div>
     </div>
 
