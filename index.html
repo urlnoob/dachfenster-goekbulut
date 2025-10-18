@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dachfenster Einbau & Austausch Stadtoldendorf | DDG Gökbulut - VELUX Partner</title>
+    <meta name="description" content="Professioneller Dachfenster Einbau & Austausch vom Meisterbetrieb. 25 Jahre Erfahrung, VELUX Partner. Jetzt 20% Jubiläums-Rabatt sichern!">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E40414',
+                            dark: '#201c1c',
+                            darker: '#212529'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        @keyframes pulse-scale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Formular: Einheitliches Design für Option Cards */
+        #step-content .option-card {
+            background: white !important;
+            border: 2px solid #e5e7eb !important;
+            border-radius: 1rem !important;
+            padding: 1.5rem !important;
+            cursor: pointer !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            backdrop-filter: none !important;
+        }
+
+        #step-content .option-card:hover {
+            border-color: #E40414 !important;
+            background: white !important;
+            box-shadow: 0 20px 25px -5px rgba(228, 4, 20, 0.1), 0 10px 10px -5px rgba(228, 4, 20, 0.04) !important;
+            transform: translateY(-0.5rem) !important;
+        }
+
+        #step-content .option-card > div > div:first-child {
+            width: 4rem !important;
+            height: 4rem !important;
+            margin: 0 auto 1rem !important;
+            background: #f9fafb !important;
+            border-radius: 0.75rem !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.3s ease !important;
+        }
+
+        #step-content .option-card:hover > div > div:first-child {
+            background: #fef2f2 !important;
+        }
+
+        #step-content .option-card svg {
+            width: 2rem !important;
+            height: 2rem !important;
+            color: #374151 !important;
+            stroke: #374151 !important;
+            fill: none !important;
+            transition: all 0.3s ease !important;
+        }
+
+        #step-content .option-card:hover svg {
+            color: #E40414 !important;
+            stroke: #E40414 !important;
+        }
+
+        #step-content .option-card p, 
+        #step-content .option-card h4 {
+            font-weight: 600 !important;
+            color: #1f2937 !important;
+            transition: color 0.3s ease !important;
+        }
+
+        #step-content .option-card:hover p,
+        #step-content .option-card:hover h4 {
+            color: #E40414 !important;
+        }
+        
+        /* Größere Cards (Step 3, 5, 6) */
+        #step-content .option-card-large {
+            padding: 2rem !important;
+        }
+        
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.025em;
+        }
+        
+        .shadow-brand {
+            box-shadow: 0 10px 40px -10px rgba(228, 4, 20, 0.25);
+        }
+        
+        .shadow-soft {
+            box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
+        }
+        
+        .shadow-strong {
+            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -8px rgba(228, 4, 20, 0.4);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #E40414 0%, #c50311 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .badge-pill {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        @keyframes pulse-subtle {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 10px 40px -10px rgba(228, 4, 20, 0.4);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 15px 50px -10px rgba(228, 4, 20, 0.6);
+            }
+        }
+        
+        .animate-pulse-subtle {
+            animation: pulse-subtle 2s ease-in-out infinite;
+        }
+        
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .animate-spin-slow {
+            animation: spin-slow 3s linear infinite;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Jubiläums-Banner -->
+    <div class="bg-gradient-to-r from-brand-red via-red-600 to-brand-red text-white py-3 px-4 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm md:text-base font-semibold tracking-wide">
+                25 JAHRE FIRMENJUBILÄUM - 20% RABATT + 15% BAFA = 35% ERSPARNIS
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <img src="images/logos/Dachdeckei in 37627 Stadtoldendorf Photovoltaik.png" alt="DDG Gökbulut - Dachdeckerei Stadtoldendorf" class="h-14 md:h-16 w-auto object-contain">
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#leistungen" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Leistungen</a>
+                    <a href="#über-uns" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Über uns</a>
+                    <a href="#ablauf" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Ablauf</a>
+                    <a href="#referenzen" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Referenzen</a>
+                    <a href="#kontakt" class="bg-brand-red text-white px-7 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-brand">
+                        Angebot anfordern
+                    </a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <!-- Modern Mobile Menu -->
+                <div id="mobile-menu" class="lg:hidden fixed inset-0 z-50 hidden">
+                    <!-- Backdrop with blur effect -->
+                    <div class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm"></div>
+                    
+                    <!-- Menu panel -->
+                    <div class="relative h-full w-full max-w-sm ml-auto bg-gray-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+                        <!-- Header with gradient -->
+                        <div class="bg-gradient-to-br from-brand-red to-red-700 p-6 pb-8">
+                            <div class="flex justify-between items-center mb-6">
+                                <img src="images/logos/Dachdeckei in 37627 Stadtoldendorf Photovoltaik.png" alt="DDG Gökbulut" class="h-10 w-auto brightness-0 invert">
+                                <button id="mobile-menu-close" class="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-white">
+                                <h3 class="text-lg font-bold mb-1">Dachdeckerei Gökbulut</h3>
+                                <p class="text-red-100 text-sm">Ihr Meisterbetrieb vor Ort</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation -->
+                        <div class="p-6 bg-white">
+                            <nav class="space-y-2">
+                                <a href="#leistungen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                    </svg>
+                                    Leistungen
+                                </a>
+                                <a href="#über-uns" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                    Über uns
+                                </a>
+                                <a href="#ablauf" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                    </svg>
+                                    Ablauf
+                                </a>
+                                <a href="#referenzen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    Referenzen
+                                </a>
+                            </nav>
+                            
+                            <!-- CTA Button -->
+                            <div class="mt-8 pt-6 border-t border-gray-100">
+                                <a href="#kontakt" class="block w-full bg-gradient-to-r from-brand-red to-red-700 text-white py-4 px-6 rounded-xl font-bold text-center hover:from-red-600 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                                    Kostenloses Angebot
+                                </a>
+                            </div>
+                            
+                            <!-- Contact Info -->
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="space-y-3 text-sm text-gray-600">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                        <span>+49 5532 999537</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                        <span>Hoopstr. 5, 37627 Stadtoldendorf</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-8 pb-16 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-red-50/30 -z-10"></div>
+        
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-4 items-center">
+                <div class="animate-fade-in-up">
+                    <div class="inline-flex items-center space-x-2 text-gray-800 border border-gray-800 px-4 md:px-6 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold mb-6 md:mb-8">
+                        <svg class="w-4 h-4 md:w-5 md:h-5 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>20% Rabatt + 15% BAFA-Förderung • Nur bis 31.12.2025</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark mb-6 leading-tight">
+                        Alte Dachfenster?
+                        <span class="block gradient-text">Jetzt zum Festpreis tauschen!</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 md:mb-10 leading-relaxed font-medium">
+                        Schluss mit Feuchtigkeit und hohen Heizkosten – Ihr Meisterbetrieb für VELUX & Roto seit 25 Jahren.
+                    </p>
+                    
+                    <div class="space-y-3 md:space-y-4 mb-8 md:mb-12">
+                        <div class="flex items-start space-x-2 md:space-x-3">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base md:text-lg text-gray-700"><strong>20% Rabatt + 15% BAFA-Förderung</strong> – Bis zu 35% Ersparnis</span>
+                        </div>
+                        <div class="flex items-start space-x-2 md:space-x-3">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base md:text-lg text-gray-700"><strong>Angebot in 24h</strong> – Schnelle Rückmeldung garantiert</span>
+                        </div>
+                        <div class="flex items-start space-x-2 md:space-x-3">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base md:text-lg text-gray-700"><strong>Festpreis-Garantie</strong> – Keine versteckten Kosten</span>
+                        </div>
+                        <div class="flex items-start space-x-2 md:space-x-3">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base md:text-lg text-gray-700"><strong>Alles aus einer Hand</strong> – Ein Ansprechpartner für alles</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
+                            <span>Jetzt 35% Ersparnis sichern</span>
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                        <a href="tel:05532123456" class="inline-flex items-center justify-center bg-white border-2 border-gray-200 text-gray-800 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:border-brand-red hover:text-brand-red transition-all shadow-soft min-h-[56px]">
+                            <span>📞 Direkt anrufen</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative lg:ml-auto max-w-xl mt-8 lg:mt-0">
+                    <div class="relative rounded-3xl overflow-hidden shadow-strong aspect-square">
+                        <img src="images/photos/velux_studiofenster_137093-607660.jpg" alt="VELUX Dachfenster - Modernes Studiofenster" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-white rounded-2xl shadow-strong p-4 md:p-6 max-w-xs">
+                        <div class="flex items-center space-x-2 md:space-x-3 mb-3 md:mb-4">
+                            <div class="flex-shrink-0">
+                                <img src="images/logos/icons8-google-logo-48.png" alt="Google" class="w-8 h-8 md:w-10 md:h-10">
+                            </div>
+                            <div>
+                                <div class="flex text-yellow-500 text-xs md:text-sm mb-1">★★★★★</div>
+                                <p class="text-xs md:text-sm font-semibold text-gray-800">4.7 auf Google</p>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-100 pt-3 md:pt-4">
+                            <p class="text-xs text-gray-600">✓ Meisterbetrieb • 1.000+ Kunden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="leistungen" class="py-16 md:py-20 border-y border-gray-100 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-12">
+                <p class="text-gray-500 font-semibold uppercase tracking-wider text-sm mb-4">Zertifizierter Fachpartner</p>
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-dark">Wir verbauen ausschließlich Premium-Qualität</h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 max-w-4xl mx-auto">
+                <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+                    <img src="images/logos/Velux_logo.png" alt="VELUX Zertifizierter Fachpartner" class="h-16 md:h-20 w-auto object-contain">
+                </div>
+                <div class="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+                    <img src="images/logos/Roto-Logo.png" alt="Roto Zertifizierter Fachpartner" class="h-16 md:h-20 w-auto object-contain">
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-12 max-w-2xl mx-auto">
+                Als zertifizierter Partner von VELUX und Roto garantieren wir Ihnen höchste Qualitätsstandards und fachgerechten Einbau.
+            </p>
+        </div>
+    </section>
+
+    <!-- Aktion-Sektion -->
+    <section class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-5xl mx-auto">
+                <!-- Hauptüberschrift -->
+                <div class="text-center mb-16">
+                    <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-brand-dark mb-6">
+                        20% Rabatt + 15% BAFA = <span class="text-brand-red">35% Ersparnis</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Wir übernehmen die komplette Antragsstellung mit unserem zertifizierten Energieberater – Sie haben einen Ansprechpartner für alles!
+                    </p>
+                </div>
+
+                <!-- Zwei Spalten: Rabatt & BAFA -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+                    <!-- Jubiläums-Rabatt -->
+                    <div class="bg-white rounded-2xl p-8 shadow-strong border border-red-100">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-brand-dark">20% Jubiläums-Rabatt</h3>
+                                <p class="text-red-600 font-semibold">Nur bis 31.12.2025</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Unser 25-jähriges Firmenjubiläum schenken wir Ihnen! Direkter Nachlass auf alle Dachfenster-Modelle von VELUX und Roto.</p>
+                        <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                            <p class="text-sm text-red-700 font-semibold">✓ Gilt für alle Dachfenster-Modelle</p>
+                        </div>
+                    </div>
+
+                    <!-- BAFA-Förderung -->
+                    <div class="bg-white rounded-2xl p-8 shadow-strong border border-green-100">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-brand-dark">15% BAFA-Förderung</h3>
+                                <p class="text-green-600 font-semibold">Staatliche Förderung</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Staatliche Förderung für energieeffiziente Dachfenster. Unser zertifizierter Energieberater übernimmt die komplette Antragsstellung!</p>
+                        <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+                            <p class="text-sm text-green-700 font-semibold">✓ Zertifizierter Energieberater übernimmt Antrag</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Service Box -->
+                <div class="bg-white rounded-2xl p-8 shadow-strong border border-gray-200 mb-12">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-black text-brand-dark mb-4">Sie müssen sich um NICHTS kümmern!</h3>
+                        <p class="text-lg text-gray-600">Wir koordinieren alles – von der Beratung bis zur Förderung</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-gray-100 border-2 border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-black text-gray-600">1</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Beratung & Planung</h4>
+                            <p class="text-sm text-gray-600">Vor Ort Beratung durch unseren Meister</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-gray-100 border-2 border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-black text-gray-600">2</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">BAFA-Antrag & Förderung</h4>
+                            <p class="text-sm text-gray-600">Unser Energieberater übernimmt alles</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-gray-100 border-2 border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-black text-gray-600">3</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Einbau & Service</h4>
+                            <p class="text-sm text-gray-600">Unser erfahrenes Team baut ein</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center">
+                    <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
+                        <span>Kostenloses Angebot anfordern</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <p class="text-gray-600 text-sm mt-3 font-medium">20% Rabatt + 15% BAFA bis 31.12.2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Vorher & Nachher</p>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">So wird aus alt wieder neu</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ihre Dachfenster sind undicht, dunkel oder veraltet? Wir ersetzen sie durch moderne, energieeffiziente Fenster – Sie sparen bis zu 30% Heizkosten und gewinnen mehr Licht.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border-2 border-red-50 card-hover">
+                    <div class="aspect-video relative">
+                        <img src="images/photos/altes-fenster.jpg" alt="Altes, undichtes Dachfenster - Vorher" class="w-full h-full object-cover">
+                        <div class="absolute -top-0 -left-0 w-32 h-32 overflow-hidden">
+                            <div class="absolute top-6 -left-8 bg-red-500 text-white text-center font-bold text-sm py-2 px-12 transform -rotate-45 shadow-lg">
+                                VORHER
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">Das Problem mit alten Fenstern</h3>
+                        <p class="text-gray-600 mb-6">Diese Probleme kosten Sie täglich Geld und Lebensqualität:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">Undicht & feucht</strong>
+                                    <p class="text-gray-600 text-sm mt-1">Wasserschäden und Schimmelbildung im Dachgeschoss</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">Hohe Heizkosten</strong>
+                                    <p class="text-gray-600 text-sm mt-1">Schlechte Dämmung lässt Wärme entweichen – jeden Tag</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">Dunkel & schwergängig</strong>
+                                    <p class="text-gray-600 text-sm mt-1">Zu wenig Licht und Fenster lassen sich kaum öffnen</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl overflow-hidden shadow-soft border-2 border-green-100 card-hover">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="images/photos/velux-johannsen-dsc5887-xs.jpg" alt="Neue VELUX Dachfenster - Nachher" class="w-full h-full object-cover scale-[1.6]" style="object-position: 100% 30%; transform-origin: 100% 30%;">
+                        <div class="absolute -top-0 -left-0 w-32 h-32 overflow-hidden">
+                            <div class="absolute top-6 -left-8 bg-green-600 text-white text-center font-bold text-sm py-2 px-12 transform -rotate-45 shadow-lg">
+                                NACHHER
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-4">Ihre Lösung: Neue, energieeffiziente Dachfenster</h3>
+                        <p class="text-gray-700 mb-6">Das bekommen Sie mit modernen Dachfenstern:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">100% dicht & sicher</strong>
+                                    <p class="text-gray-700 text-sm mt-1">Perfekte Abdichtung – keine Feuchtigkeit, kein Schimmel mehr</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">Bis zu 30% weniger Heizkosten</strong>
+                                    <p class="text-gray-700 text-sm mt-1">Moderne 3-fach-Verglasung spart bares Geld – jeden Monat</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <strong class="text-gray-900">Mehr Licht & Komfort</strong>
+                                    <p class="text-gray-700 text-sm mt-1">Elektrische Steuerung, Regensensor & bis zu 80% mehr Tageslicht</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#kontakt" class="inline-flex items-center justify-center bg-brand-red text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg shadow-brand hover:bg-red-700 transition-all">
+                    <span>Kostenloses Angebot anfordern</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <p class="text-gray-600 text-sm mt-3 font-medium">20% Rabatt + 15% BAFA bis 31.12.2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Social Proof -->
+    <section class="py-16 md:py-20 lg:py-28 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-6xl mx-auto bg-brand-dark rounded-3xl p-8 md:p-10 shadow-strong">
+                <!-- Stats Banner -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-10 pb-10 border-b border-white/10">
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">25</div>
+                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Jahre Firmenjubiläum</div>
+                    </div>
+                    <div class="text-center relative">
+                        <div class="absolute top-0 right-0 md:right-2 bg-brand-red text-white text-xs px-2 py-0.5 rounded-full font-bold">NEU</div>
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">35%</div>
+                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Max. Ersparnis</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">1000+</div>
+                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Zufriedene Kunden</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">500+</div>
+                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Dachfenster verbaut</div>
+                    </div>
+                </div>
+
+                <!-- Social Proof & Certifications -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                    <!-- Google Reviews -->
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-lg md:text-xl mr-2">
+                                ★★★★★
+                            </div>
+                            <img src="images/logos/icons8-google-logo-48.png" alt="Google" class="h-5 md:h-6">
+                        </div>
+                        <div class="text-xl md:text-2xl font-bold mb-4 text-white">4,7 von 5 Sternen auf Google</div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-5">"Als Familienbetrieb legen wir höchsten Wert auf Qualität und Kundenzufriedenheit. Jedes Dachfenster-Projekt behandeln wir mit der gleichen Sorgfalt wie bei uns selbst zu Hause."</p>
+                        
+                        <!-- Customer Avatars -->
+                        <div class="flex items-center mb-4">
+                            <div class="flex -space-x-2">
+                                <img src="images/testimonials/testimonial1.png" alt="Kunde 1" class="w-9 h-9 rounded-full border-2 border-brand-dark object-cover">
+                                <img src="images/testimonials/testimonial2.png" alt="Kunde 2" class="w-9 h-9 rounded-full border-2 border-brand-dark object-cover">
+                                <img src="images/testimonials/testimonial3.png" alt="Kunde 3" class="w-9 h-9 rounded-full border-2 border-brand-dark object-cover">
+                                <img src="images/testimonials/testimonial4.png" alt="Kunde 4" class="w-9 h-9 rounded-full border-2 border-brand-dark object-cover">
+                                <img src="images/testimonials/testimonial5.png" alt="Kunde 5" class="w-9 h-9 rounded-full border-2 border-brand-dark object-cover">
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="text-sm text-gray-300 hover:text-white underline transition-colors inline-block">Alle Bewertungen ansehen →</a>
+                        
+                        <!-- Zertifikate Logos -->
+                        <div class="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-white/10">
+                            <div class="bg-white rounded-lg p-2 flex items-center justify-center">
+                                <img src="images/logos/handwerkskammer-hildesheim.png" alt="Handwerkskammer Hildesheim" class="h-20 md:h-24 w-auto">
+                            </div>
+                            <div class="bg-white rounded-lg p-2 flex items-center justify-center">
+                                <img src="images/logos/innung-logo.png" alt="Innung" class="h-12 md:h-16 w-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div>
+                        <!-- TAH Bericht -->
+                        <div class="rounded-xl p-4 border border-white/20">
+                            <img src="images/logos/tah-bericht02.png" alt="TAH Bericht - Zertifizierung" class="w-full h-auto rounded-lg mb-4">
+                            
+                            <!-- TAH Logo & Info -->
+                            <div class="flex items-center justify-center gap-3 pt-4 border-t border-white/10">
+                                <span class="text-gray-400 text-sm">Erschienen in:</span>
+                                <img src="images/logos/Tah-White.svg" alt="TAH Logo" class="h-8 w-auto opacity-80">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="über-uns" class="py-16 md:py-20 lg:py-28 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Über uns</p>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">Dachdeckermeisterbetrieb Gökbulut</h2>
+                <p class="text-xl text-brand-red font-bold max-w-2xl mx-auto">25 Jahre Handwerkstradition • Über 1.000 zufriedene Kunden • Meisterqualität garantiert</p>
+            </div>
+            
+            <!-- Meister-Vorstellung (Platz für Meister-Bild) -->
+            <div class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 shadow-strong border border-gray-100 mb-16 max-w-6xl mx-auto">
+                <div class="flex lg:flex-row flex-col gap-12 items-center">
+                    <!-- Links: Meister-Bild -->
+                    <div class="flex-shrink-0">
+                        <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-lg">
+                            <img src="images/photos/oemer-goekbulut.png" alt="Ömer Gökbulut - Dachdeckermeister" class="w-full h-full object-cover object-left">
+                        </div>
+                    </div>
+                    
+                    <!-- Rechts: Badge + Überschrift + Subhead + Text + Points -->
+                    <div class="flex-1">
+                        <div class="inline-flex items-center bg-brand-red text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Inhaber & Dachdeckermeister
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-black text-brand-dark mb-2">Ömer Gökbulut</h3>
+                        <p class="text-xl text-brand-red font-semibold mb-6">Ihr persönlicher Ansprechpartner</p>
+                        
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Bei uns zählt noch die Handschlagqualität. Ehrlichkeit und Vertrauen sind das Fundament unseres Handwerks. 
+                            Ob Dachfenster, Dachsanierung oder komplette Dachdeckerei – wir stehen mit unserem Namen dafür ein. 
+                            Über 25 Jahre Erfahrung und mehr als 1.000 zufriedene Kunden sprechen für unsere Qualität und Zuverlässigkeit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qualität & Zertifikate -->
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-strong border border-gray-100 mb-16 max-w-6xl mx-auto relative">
+                <!-- 25 Jahre Badge -->
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-red text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" style="animation: pulse-scale 2s ease-in-out infinite;">
+                    <div class="text-center">
+                        <svg class="w-5 h-5 mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="font-bold text-sm leading-tight">25 Jahre</span>
+                    </div>
+                </div>
+                
+                <div class="flex lg:flex-row flex-col gap-8 items-center">
+                    <!-- Links: Zertifikate -->
+                    <div class="flex-1">
+                        <h3 class="text-2xl md:text-3xl font-black text-brand-dark mb-4">Qualität & Zertifizierungen</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Als eingetragener Meisterbetrieb stehen wir für höchste Qualitätsstandards 
+                            in allen Bereichen der Dachdeckerei und Dachsanierung.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark">Eingetragener Meisterbetrieb</h4>
+                                    <p class="text-sm text-gray-600">Handwerkskammer Hildesheim</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark">Über 1.000 zufriedene Kunden</h4>
+                                    <p class="text-sm text-gray-600">Seit 2000 erfolgreich tätig</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark">Persönliche Betreuung</h4>
+                                    <p class="text-sm text-gray-600">Direkt zum Meister - kein Innendienst</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rechts: Leistungen -->
+                    <div class="flex-1">
+                        <h3 class="text-2xl md:text-3xl font-black text-brand-dark mb-4">Unsere Leistungen</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Von Dachfenstern bis zur kompletten Dachsanierung - 
+                            wir sind Ihr Ansprechpartner für alle Arbeiten am Dach.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 rounded-xl p-4 text-center">
+                                <h4 class="font-bold text-brand-dark text-sm mb-1">Dacharbeiten & Sanierung</h4>
+                                <p class="text-xs text-gray-600">Dacheindeckung, Sanierungen, Wartung</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 text-center relative border-2 border-green-300 shadow-lg">
+                                <div class="absolute -top-2 -right-2">
+                                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">AKTION</span>
+                                </div>
+                                <h4 class="font-bold text-brand-dark text-sm mb-1">Dachfenster & Ausbau</h4>
+                                <p class="text-xs text-gray-600">Dachfenster, Gauben, Lichtlösungen</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-xl p-4 text-center">
+                                <h4 class="font-bold text-brand-dark text-sm mb-1">Energie & Nachhaltigkeit</h4>
+                                <p class="text-xs text-gray-600">Photovoltaik, Dämmung, KfW</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-xl p-4 text-center">
+                                <h4 class="font-bold text-brand-dark text-sm mb-1">Dachtechnik & Entwässerung</h4>
+                                <p class="text-xs text-gray-600">Regenrinnen, Abdichtung</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- How it Works -->
+    <section id="ablauf" class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">35% Ersparnis sichern</p>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">So einfach wird's gemacht</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">20% Jubiläums-Rabatt + bis zu 15% BAFA-Förderung – Alles aus einer Hand</p>
+            </div>
+            
+            <div class="max-w-7xl mx-auto space-y-8">
+                <!-- Reihe 1: Schritt 1 + Bild 1 + Schritt 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr_2fr] gap-6 lg:gap-8 items-stretch lg:h-80">
+                    <!-- Schritt 1: Kostenlose Anfrage -->
+                    <div class="bg-brand-dark rounded-3xl p-6 lg:p-8 shadow-strong flex flex-col justify-between lg:order-none order-1">
+                        <div class="flex flex-col h-full justify-center">
+                            <div class="w-8 h-8 flex items-center mb-3">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">1. Kostenloses Angebot anfordern</h3>
+                            <p class="text-gray-300 leading-relaxed mb-6">
+                                Unverbindliche Anfrage oder direkt anrufen. Wir beraten Sie persönlich und erstellen Ihr individuelles Angebot mit 20% Rabatt + bis zu 15% BAFA-Förderung.
+                            </p>
+                        </div>
+                        <a href="#kontakt" class="inline-flex items-center bg-brand-red text-white px-4 sm:px-6 py-3 sm:py-3 rounded-lg font-bold hover:bg-red-700 transition-colors text-sm sm:text-base min-h-[48px] sm:min-h-[auto]">
+                            <span>Kostenloses Angebot anfordern</span>
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Bild 1: Beratung (20% der Reihe) -->
+                    <div class="flex justify-center items-center lg:order-none order-2">
+                        <img src="images/photos/velux_studiofenster_137093-607660.jpg" alt="Beratung vor Ort" class="w-full h-48 lg:h-full rounded-2xl object-cover shadow-lg">
+                    </div>
+                    
+                    <!-- Schritt 2: Beratung & BAFA -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-strong border border-gray-100 flex flex-col justify-center lg:order-none order-3">
+                        <div class="flex flex-col h-full justify-center">
+                            <div class="w-8 h-8 flex items-center mb-3">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-brand-dark mb-3">2. Beratung & BAFA-Antrag</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Persönliche Beratung, Festpreis-Angebot und unser zertifizierter Energieberater übernimmt die komplette BAFA-Antragsstellung für Sie – ohne Extrakosten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reihe 2: Schritt 3 + Schritt 4 + Bild 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-[2fr_2fr_1fr] gap-6 lg:gap-8 items-stretch lg:h-80">
+                    <!-- Schritt 3: Einbau -->
+                    <div class="bg-white rounded-3xl p-6 lg:p-8 shadow-strong border border-gray-100 flex flex-col justify-center lg:order-none order-1">
+                        <div class="flex flex-col h-full justify-center">
+                            <div class="w-8 h-8 flex items-center mb-3">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-brand-dark mb-3">3. Professioneller Einbau</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Unser erfahrenes Team montiert Ihre neuen Dachfenster fachgerecht. Termingerecht, sauber und mit laufender Qualitätskontrolle.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Schritt 4: Abnahme & Garantie -->
+                    <div class="bg-brand-dark rounded-3xl p-6 lg:p-8 shadow-strong flex flex-col justify-center lg:order-none order-3">
+                        <div class="flex flex-col h-full justify-center">
+                            <div class="w-8 h-8 flex items-center mb-3">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">4. Abnahme & persönlicher Service</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Gemeinsame Abnahme aller Details. Direkt zum Meister – kein Innendienst, keine Hotline. Persönlicher Service auch nach Projektabschluss.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Bild 2: Ergebnis (20% der Reihe) -->
+                    <div class="flex justify-center items-center lg:order-none order-2">
+                        <img src="images/photos/mensch oeffnet dachfenster.jpg" alt="Mensch öffnet Dachfenster" class="w-full h-48 lg:h-full rounded-2xl object-cover shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section id="referenzen" class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Kundenstimmen</p>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6">Das sagen unsere Kunden</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Über 1.000 zufriedene Kunden in der Region</p>
+            </div>
+            
+            <!-- Reviews Carousel -->
+            <div class="max-w-6xl mx-auto relative">
+                <!-- Navigation Buttons - Outside -->
+                <button onclick="previousReview()" class="hidden md:block absolute -left-16 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10">
+                    <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button onclick="nextReview()" class="hidden md:block absolute -right-16 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10">
+                    <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Navigation -->
+                <div class="flex md:hidden justify-center space-x-2 mb-6">
+                    <button onclick="previousReview()" class="bg-white rounded-full p-2 shadow-lg border border-gray-200">
+                        <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button onclick="nextReview()" class="bg-white rounded-full p-2 shadow-lg border border-gray-200">
+                        <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="reviews-carousel">
+                        <!-- Review 1 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">B</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Bernd</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Das Team von Ömer Gökbulut hat bei uns unter schwersten Bedingungen hervorragend das Dach neu gedeckt. Alle Probleme wurden wie selbstverständlich gelöst. Vorbildlich, freundlich, verständnisvoll und fachkundig."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">D.M.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Daniel Meyer</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Komplette Neueindeckung. Super Team, top Beratung und Ausführung. Bei Problemen sofortige Lösung parat. Immer wieder gerne."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">I.K.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Ingrid Kieczka</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Komplette Dachneueindeckung incl. Dämmung. Preis-/Leistungsverhältnis absolut in Ordnung. Von der Planung bis zur Fertigstellung top! Zügig und sauber ausgeführt."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">L.G.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Lars Grohmann</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Das Team hat bei der Dachsanierung inkl. Isolierung hervorragende Arbeit geleistet. Alle Arbeiten wurden akkurat und zügig ausgeführt und optisch sehr schön anzusehen. Können wir nur empfehlen."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 5 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">J.N.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Jürgen Niegisch</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Den Dachdecker kann ich mit ruhigen Gewissen weiterempfehlen. Top Dachdecker, tolles Team. Weiter so, ihr seid top!"</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 6 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">S.Ö.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Seyfi Özaydin</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Sehr saubere und schnelle Arbeit. Vielen Dank für die zuverlässige Hilfe."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 1 - Duplicate for seamless loop -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">B</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Bernd</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Das Team von Ömer Gökbulut hat bei uns unter schwersten Bedingungen hervorragend das Dach neu gedeckt. Alle Probleme wurden wie selbstverständlich gelöst. Vorbildlich, freundlich, verständnisvoll und fachkundig."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 - Duplicate for seamless loop -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">D.M.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Daniel Meyer</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Komplette Neueindeckung. Super Team, top Beratung und Ausführung. Bei Problemen sofortige Lösung parat. Immer wieder gerne."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 - Duplicate -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">I.K.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Ingrid Kieczka</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Komplette Dachneueindeckung incl. Dämmung. Preis-/Leistungsverhältnis absolut in Ordnung. Von der Planung bis zur Fertigstellung top! Zügig und sauber ausgeführt."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 - Duplicate -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">L.G.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Lars Grohmann</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Das Team hat bei der Dachsanierung inkl. Isolierung hervorragende Arbeit geleistet. Alle Arbeiten wurden akkurat und zügig ausgeführt und optisch sehr schön anzusehen. Können wir nur empfehlen."</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 5 - Duplicate -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">J.N.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Jürgen Niegisch</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Den Dachdecker kann ich mit ruhigen Gewissen weiterempfehlen. Top Dachdecker, tolles Team. Weiter so, ihr seid top!"</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 6 - Duplicate -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-4">
+                            <div class="bg-white rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-strong transition-all duration-500 border border-gray-100 h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-14 h-14 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                                        <span class="text-lg font-bold text-gray-600">S.Ö.</span>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-brand-dark text-lg">Seyfi Özaydin</div>
+                                    </div>
+                                </div>
+                                <div class="flex text-brand-red mb-4">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed italic">"Sehr saubere und schnelle Arbeit. Vielen Dank für die zuverlässige Hilfe."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Multi-Step Funnel Form -->
+    <section id="kontakt" class="py-16 md:py-20 lg:py-28 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <!-- Section Headline -->
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Kostenloses Angebot</p>
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">Sichere dir jetzt dein unverbindliches Angebot</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">In nur wenigen Schritten zu deinem persönlichen Dachfenster-Angebot mit bis zu 35% Ersparnis</p>
+            </div>
+            
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-8">
+                    <!-- Left Side: Benefits & Contact Person -->
+                    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 flex flex-col justify-center">
+                        <!-- Benefits List -->
+                        <div class="space-y-4 mb-8">
+                             <div class="flex items-center">
+                                 <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                     </svg>
+                                 </div>
+                                 <span class="text-gray-700"><strong>Anfrage in nur 45 Sekunden</strong> – Schnell & unkompliziert</span>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                     </svg>
+                                 </div>
+                                 <span class="text-gray-700"><strong>Bis zu 35% Ersparnis</strong> – Jubiläums-Rabatt + BAFA-Förderung</span>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                     </svg>
+                                 </div>
+                                 <span class="text-gray-700"><strong>Festpreis-Garantie</strong> – Keine versteckten Kosten</span>
+                             </div>
+                             <div class="flex items-center">
+                                 <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                     </svg>
+                                 </div>
+                                 <span class="text-gray-700"><strong>Persönliche Meister-Beratung</strong> – Direkt vom Dachdeckermeister</span>
+                             </div>
+                        </div>
+
+                        <!-- Contact Person -->
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-white shadow-lg">
+                                <img src="images/photos/oemer-goekbulut.png" alt="Ömer Gökbulut" class="w-full h-full object-cover object-left">
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mb-1">DEIN ANSPRECHPARTNER</p>
+                                <p class="text-lg font-bold text-brand-dark">Ömer Gökbulut</p>
+                                <p class="text-sm text-gray-600">Dachdeckermeister</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Multi-Step Funnel -->
+                    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20">
+                        <!-- Progress -->
+                        <div class="mb-8">
+                            <div class="w-full bg-gray-200/60 rounded-full h-2 shadow-inner backdrop-blur-sm">
+                                <div class="bg-gradient-to-r from-brand-red via-red-600 to-red-700 h-2 rounded-full transition-all duration-700 shadow-lg" id="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step Content -->
+                        <div id="step-content">
+                            <!-- Step 1: Dachform -->
+                            <div class="step" data-step="1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Welche Dachform hat das Gebäude?</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="satteldach">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_ne0ex0ne0ex0ne0e-removebg-preview.png" alt="Satteldach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Satteldach</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="walmdach">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_2xremw2xremw2xre-removebg-preview.png" alt="Walmdach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Walmdach</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="flachdach">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_rjrdr2rjrdr2rjrd-removebg-preview.png" alt="Flachdach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Flachdach</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="sonstiges">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Sonstiges" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Sonstiges</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Anzahl Dachfenster -->
+                            <div class="step hidden" data-step="2">
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wie viele Dachfenster benötigen Sie?</h3>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="1">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_swpr4aswpr4aswpr-removebg-preview.png" alt="1 Dachfenster" class="w-8 h-8 md:w-24 md:h-24 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">1</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="2-4">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_gi51y0gi51y0gi51-removebg-preview.png" alt="2-4 Dachfenster" class="w-8 h-8 md:w-24 md:h-24 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">2 - 4</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="mehr-als-4">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_z8owbzz8owbzz8ow-removebg-preview.png" alt="Mehr als 4 Dachfenster" class="w-8 h-8 md:w-28 md:h-28 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Mehr als 4</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="weiss-nicht">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Weiß nicht" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Weiß nicht</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Back Button -->
+                                <div class="mt-6 md:hidden">
+                                    <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
+                                        ← zurück
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Austausch vs. Neueinbau -->
+                            <div class="step hidden" data-step="3">
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Handelt es sich um einen Neubau oder Austausch?</h3>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="austausch">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_6uqt5e6uqt5e6uqt-removebg-preview.png" alt="Austausch" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <h4 class="font-bold text-gray-800 mb-1 md:mb-2">Austausch</h4>
+                                                <p class="text-sm text-gray-600">(1zu1 Tausch)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="neueinbau">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_pbxv9opbxv9opbxv-removebg-preview.png" alt="Neueinbau" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <h4 class="font-bold text-gray-800 mb-1 md:mb-2">Neueinbau</h4>
+                                                <p class="text-sm text-gray-600">(inkl. Dachausschnitt)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="beides">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_gg6u3vgg6u3vgg6u-removebg-preview.png" alt="Beides" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <h4 class="font-bold text-gray-800 mb-1 md:mb-2">Beides</h4>
+                                                <p class="text-sm text-gray-600">(Austausch + Neueinbau)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Back Button -->
+                                <div class="mt-6 md:hidden">
+                                    <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
+                                        ← zurück
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Isolierung -->
+                            <div class="step hidden" data-step="4">
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wie stark sollen Ihre neuen Dachfenster isoliert sein?</h3>
+                                
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="einfach">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_kdwkgzkdwkgzkdwk-removebg-preview.png" alt="Einfach-Verglasung" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <p class="font-semibold text-gray-800">Einfach-Verglasung</p>
+                                                <p class="text-sm text-gray-600">(Kaltraum)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="zweifach">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_kd2v06kd2v06kd2v-removebg-preview.png" alt="Zweifach-Verglasung" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <p class="font-semibold text-gray-800">Zweifach-Verglasung</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm relative" data-value="dreifach">
+                                        <!-- Förderfähig Badge -->
+                                        <div class="absolute -top-2 -right-2 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
+                                            Förderfähig
+                                        </div>
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_olm3pzolm3pzolm3-removebg-preview.png" alt="Dreifach-Verglasung" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <p class="font-semibold text-gray-800">Dreifach-Verglasung</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="sonstiges">
+                                        <div class="flex items-center md:block">
+                                            <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Sonstiges" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
+                                            <div class="ml-3 md:ml-0 md:text-center">
+                                                <p class="font-semibold text-gray-800">Sonstiges /<br>Weiß nicht</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Back Button -->
+                                <div class="mt-6 md:hidden">
+                                    <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
+                                        ← zurück
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Step 5: Postleitzahl -->
+                            <div class="step hidden" data-step="5">
+                                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wo soll der Einbau der Dachfenster erfolgen?</h3>
+                                
+                                <div class="max-w-md mx-auto mb-8">
+                                    <input type="text" id="postleitzahl" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-center text-lg sm:text-xl font-semibold min-h-[56px]" placeholder="Postleitzahl eingeben..." maxlength="5">
+                                    <p class="text-sm text-gray-600 text-center mt-2">Bitte geben Sie hier Ihre 5-stellige PLZ an.</p>
+                                    <p id="plz-error" class="text-sm text-red-600 text-center mt-2 hidden">Bitte geben Sie eine gültige 5-stellige Postleitzahl ein.</p>
+                                </div>
+                                
+                                <div class="flex justify-between items-center">
+                                    <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
+                                        ← zurück
+                                    </button>
+                                    <button type="button" id="plz-weiter-btn" class="bg-brand-red text-white px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
+                                        Weiter
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 6: LUPA-Style Contact Form -->
+                            <div class="step hidden" data-step="6">
+                                <div class="text-center mb-8">
+                                    <div class="relative w-16 h-16 mx-auto mb-4">
+                                        <!-- Background circle -->
+                                        <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 64 64">
+                                            <circle cx="32" cy="32" r="28" fill="none" stroke="#e5e7eb" stroke-width="6"/>
+                                            <circle cx="32" cy="32" r="28" fill="none" stroke="#16a34a" stroke-width="6" 
+                                                    stroke-dasharray="176" stroke-dashoffset="14.08" 
+                                                    stroke-linecap="round"/>
+                                        </svg>
+                                        <!-- Percentage text -->
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <span class="text-green-600 font-bold text-lg">92%</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2">Fast geschafft!</h3>
+                                    <h4 class="text-lg font-medium text-gray-700">Wer soll das Angebot erhalten?</h4>
+                                </div>
+
+                                <div class="max-w-md mx-auto space-y-3">
+                                    <div>
+                                        <input type="text" name="name" id="contact-name" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Vor- und Nachname" required autocomplete="name">
+                                        <p id="name-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie Ihren Namen ein.</p>
+                                    </div>
+                                    <div>
+                                        <input type="tel" name="phone" id="contact-phone" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Telefonnummer" required autocomplete="tel">
+                                        <p id="phone-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie eine gültige Telefonnummer ein.</p>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" id="contact-email" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="E-Mail" required autocomplete="email">
+                                        <p id="email-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie eine gültige E-Mail-Adresse ein.</p>
+                                    </div>
+
+                                    <div class="flex items-center space-x-3 bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
+                                        <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="text-sm text-green-700">Deine Daten werden 100% vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+                                    </div>
+                                    
+                                    <div class="text-left mb-4">
+                                        <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
+                                            ← zurück
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="flex justify-center">
+                                        <button type="button" id="contact-weiter-btn" class="bg-brand-red text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
+                                            Kostenloses Angebot anfordern
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Final Success Step -->
+                            <div class="step hidden" data-step="8">
+                                <div class="text-center">
+                                    <div class="w-20 h-20 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Vielen Dank!</h3>
+                                    <p class="text-lg text-gray-600 mb-6">Ihr Angebot wird vorbereitet. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+                                    <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                                        <p class="text-red-700"><strong>Nächste Schritte:</strong></p>
+                                        <ul class="text-red-700 text-left mt-2 space-y-1">
+                                            <li>• Unser Experte ruft Sie an</li>
+                                            <li>• Kostenlose Vor-Ort-Beratung</li>
+                                            <li>• Individuelles Angebot</li>
+                                            <li>• 35% Ersparnis durch Jubiläumsrabatt + BAFA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="flex flex-wrap items-center justify-center gap-4 mt-8 pt-6 border-t border-gray-200">
+                            <div class="flex items-center bg-gray-100 px-3 py-2 rounded-lg">
+                                <div class="flex -space-x-2 mr-2">
+                                    <img src="images/testimonials/testimonial1.png" alt="Kunde 1" class="w-6 h-6 rounded-full border border-white object-cover">
+                                    <img src="images/testimonials/testimonial2.png" alt="Kunde 2" class="w-6 h-6 rounded-full border border-white object-cover">
+                                    <img src="images/testimonials/testimonial3.png" alt="Kunde 3" class="w-6 h-6 rounded-full border border-white object-cover">
+                                </div>
+                                <span class="text-sm text-gray-600">4,7 von 5,0 auf </span>
+                                <img src="images/logos/icons8-google-logo-48.png" alt="Google" class="h-4 w-auto ml-1">
+                            </div>
+                            <img src="images/logos/dsgvo.png" alt="DSGVO Konform" class="h-8 w-auto">
+                            <img src="images/logos/ssl.png" alt="SSL Verschlüsselt" class="h-8 w-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wir sagen Danke! -->
+    <section class="py-16 md:py-20 lg:py-28 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <!-- 25 Jahre Jubiläum - Partner Glückwünsche -->
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-black text-brand-dark mb-6">Wir sagen Danke!</h3>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Allen unseren Kunden danken wir herzlich für das Vertrauen seit 25 Jahren. Gemeinsam mit starken Partnern an unserer Seite konnten wir bereits über 1.000 erfolgreiche Projekte realisieren.
+                    </p>
+                </div>
+
+                <!-- Partner Gratulationen -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-center justify-center" style="min-height: 400px;">
+                        <img src="images/logos/gratulation01.png" alt="Glückwunsch Partner 1" class="w-full h-auto max-h-96 object-contain rounded-xl">
+                    </div>
+
+                    <div class="flex items-center justify-center" style="min-height: 400px;">
+                        <img src="images/logos/gratulation02.png" alt="Glückwunsch Partner 2" class="w-full h-auto max-h-96 object-contain rounded-xl">
+                    </div>
+
+                    <div class="flex items-center justify-center" style="min-height: 400px;">
+                        <img src="images/logos/gratulation03.png" alt="Glückwunsch Partner 3" class="w-full h-auto max-h-96 object-contain rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 md:py-20 lg:py-28 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">FAQ</p>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6">Häufige Fragen</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Alles, was Sie wissen müssen</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
+                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
+                        <span>Was kostet ein neues Dachfenster?</span>
+                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Die Kosten variieren je nach Größe und Ausstattung. Ein Standard-Dachfenster inkl. Einbau liegt zwischen 1.500-3.000€. Wir erstellen Ihnen gerne ein kostenloses Angebot.</p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
+                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
+                        <span>Wie lange dauert der Einbau?</span>
+                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">In der Regel 1 Tag pro Fenster. Bei mehreren Fenstern entsprechend länger. Nach Auftragserteilung können wir meist innerhalb von 2 Wochen montieren.</p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
+                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
+                        <span>Welche Marken bieten Sie an?</span>
+                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Wir sind zertifizierter Partner von VELUX und Roto - den führenden Herstellern für Dachfenster. Beide Marken bieten höchste Qualität und lange Garantien.</p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
+                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
+                        <span>Gibt es eine Garantie?</span>
+                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Ja! Auf unsere Handwerksleistung geben wir 5 Jahre Garantie. Die Hersteller-Garantie für VELUX/Roto Fenster beträgt je nach Modell 10-15 Jahre.</p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
+                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
+                        <span>Kann ich alte Fenster austauschen lassen?</span>
+                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Absolut! Wir tauschen auch alte Dachfenster gegen moderne, energieeffiziente Modelle aus. Bringen Sie einfach das Typenschild mit für ein genaues Angebot.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Step Funnel JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form elements
+            const steps = document.querySelectorAll('.step');
+            const progressBar = document.getElementById('progress-bar');
+            const postleitzahlInput = document.getElementById('postleitzahl');
+            
+            let currentStep = 1;
+            let formData = {};
+            const totalSteps = 6;
+            
+            // Initialize
+            showStep(1);
+            
+            // Show step function
+            function showStep(step) {
+                steps.forEach((s) => {
+                    if (parseInt(s.dataset.step) === step) {
+                        s.classList.remove('hidden');
+                    } else {
+                        s.classList.add('hidden');
+                    }
+                });
+                
+                // Update progress bar
+                const progress = (step / totalSteps) * 100;
+                progressBar.style.width = progress + '%';
+                currentStep = step;
+                
+            }
+            
+            // Option card selection
+            document.querySelectorAll('.option-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active state from all cards in current step
+                    const currentStepElement = document.querySelector(`.step[data-step="${currentStep}"]`);
+                    currentStepElement.querySelectorAll('.option-card').forEach(c => {
+                        c.classList.remove('border-green-500', 'bg-green-50');
+                        c.classList.add('border-gray-200', 'bg-gray-50');
+                    });
+                    
+                    // Add active state to clicked card
+                    this.classList.remove('border-gray-200', 'bg-gray-50');
+                    this.classList.add('border-green-500', 'bg-green-50');
+                    
+                    // Store selection
+                    const question = getQuestionForStep(currentStep);
+                    formData[question] = this.dataset.value;
+                    
+                    // Auto-advance to next step after a short delay
+                    setTimeout(() => {
+                        nextStep();
+                    }, 500);
+                });
+            });
+            
+            // Get question key for current step
+            function getQuestionForStep(step) {
+                const questions = {
+                    1: 'dachform',
+                    2: 'anzahl_dachfenster',
+                    3: 'austausch_neueinbau',
+                    4: 'isolierung',
+                    5: 'postleitzahl',
+                    6: 'kontaktform'
+                };
+                return questions[step] || `step_${step}`;
+            }
+            
+            // Next step function
+            function nextStep() {
+                if (currentStep < totalSteps) {
+                    showStep(currentStep + 1);
+                }
+            }
+            
+            // Back button functionality (for all .step-back-btn buttons)
+            document.querySelectorAll('.step-back-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (currentStep > 1) {
+                        showStep(currentStep - 1);
+                    }
+                });
+            });
+
+            // Form submission function
+            async function submitFormData(formData) {
+                try {
+                    // Show loading state
+                    const submitBtn = document.getElementById('contact-weiter-btn');
+                    if (submitBtn) {
+                        submitBtn.textContent = 'Wird gesendet...';
+                        submitBtn.disabled = true;
+                    }
+                    
+                    const response = await fetch('/api/submit-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+                    
+                    if (response.ok) {
+                        // Redirect to thank you page
+                        window.location.href = 'danke.html';
+                    } else {
+                        throw new Error('Fehler beim Senden');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an: +49 5532 999537');
+                    
+                    // Reset button state
+                    const submitBtn = document.getElementById('contact-weiter-btn');
+                    if (submitBtn) {
+                        submitBtn.textContent = 'Kostenloses Angebot anfordern';
+                        submitBtn.disabled = false;
+                    }
+                }
+            }
+
+            // Modern Mobile Menu functionality
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+            if (mobileMenuBtn && mobileMenu && mobileMenuClose) {
+                // Open menu with smooth animation
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.remove('hidden');
+                    // Add smooth slide-in effect
+                    setTimeout(() => {
+                        mobileMenu.querySelector('.relative').style.transform = 'translateX(0)';
+                    }, 10);
+                });
+
+                // Close menu with smooth animation
+                const closeMenu = () => {
+                    mobileMenu.querySelector('.relative').style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300);
+                };
+
+                mobileMenuClose.addEventListener('click', closeMenu);
+
+                // Close menu when clicking on backdrop
+                mobileMenu.addEventListener('click', function(e) {
+                    if (e.target === mobileMenu || e.target.classList.contains('bg-black/60')) {
+                        closeMenu();
+                    }
+                });
+
+                // Close menu when clicking on navigation links
+                mobileMenu.querySelectorAll('nav a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        closeMenu();
+                    });
+                });
+
+                // Close menu on escape key
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                        closeMenu();
+                    }
+                });
+            }
+            
+            // Postleitzahl input handling
+            if (postleitzahlInput) {
+                postleitzahlInput.addEventListener('input', function(e) {
+                    // Only allow numbers
+                    e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                });
+            }
+            
+            // Postleitzahl "Weiter" button
+            const plzWeiterBtn = document.getElementById('plz-weiter-btn');
+            const plzError = document.getElementById('plz-error');
+            if (plzWeiterBtn) {
+                plzWeiterBtn.addEventListener('click', function() {
+                    if (postleitzahlInput && postleitzahlInput.value.length === 5) {
+                        formData.postleitzahl = postleitzahlInput.value;
+                        postleitzahlInput.classList.remove('border-red-500');
+                        plzError.classList.add('hidden');
+                        nextStep();
+                    } else {
+                        postleitzahlInput.classList.add('border-red-500');
+                        plzError.classList.remove('hidden');
+                    }
+                });
+            }
+            
+            // Hide error message when user starts typing
+            if (postleitzahlInput) {
+                postleitzahlInput.addEventListener('input', function() {
+                    if (this.value.length > 0) {
+                        plzError.classList.add('hidden');
+                        postleitzahlInput.classList.remove('border-red-500');
+                    }
+                });
+            }
+            
+            // Contact form validation and submission
+            function validateContactForm() {
+                const inputs = document.querySelectorAll('.step[data-step="6"] input[required]');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('border-red-500');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('border-red-500');
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            // Contact form validation functions
+            function validateName(name) {
+                return name.trim().length >= 2 && !/[<>{}[\]\\|`~]/.test(name.trim());
+            }
+            
+            function validatePhone(phone) {
+                return phone.trim().length >= 10 && /^[\d\s\+\-\(\)]+$/.test(phone.trim());
+            }
+            
+            function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+            }
+            
+            function showFieldError(fieldId, errorId) {
+                const field = document.getElementById(fieldId);
+                const error = document.getElementById(errorId);
+                field.classList.add('border-red-500');
+                error.classList.remove('hidden');
+            }
+            
+            function hideFieldError(fieldId, errorId) {
+                const field = document.getElementById(fieldId);
+                const error = document.getElementById(errorId);
+                field.classList.remove('border-red-500');
+                error.classList.add('hidden');
+            }
+            
+            // Contact form "Weiter" button
+            const contactWeiterBtn = document.getElementById('contact-weiter-btn');
+            if (contactWeiterBtn) {
+                contactWeiterBtn.addEventListener('click', function() {
+                    const name = document.getElementById('contact-name').value;
+                    const phone = document.getElementById('contact-phone').value;
+                    const email = document.getElementById('contact-email').value;
+                    
+                    let isValid = true;
+                    
+                    // Validate name
+                    if (!validateName(name)) {
+                        showFieldError('contact-name', 'name-error');
+                        isValid = false;
+                    } else {
+                        hideFieldError('contact-name', 'name-error');
+                    }
+                    
+                    // Validate phone
+                    if (!validatePhone(phone)) {
+                        showFieldError('contact-phone', 'phone-error');
+                        isValid = false;
+                    } else {
+                        hideFieldError('contact-phone', 'phone-error');
+                    }
+                    
+                    // Validate email
+                    if (!validateEmail(email)) {
+                        showFieldError('contact-email', 'email-error');
+                        isValid = false;
+                    } else {
+                        hideFieldError('contact-email', 'email-error');
+                    }
+                    
+                    if (isValid) {
+                        // Store contact data
+                        formData.name = name.trim();
+                        formData.phone = phone.trim();
+                        formData.email = email.trim();
+                        
+                                // Send form data to server
+                                submitFormData(formData);
+                    }
+                });
+            }
+            
+            // Real-time validation (hide errors when user starts typing)
+            document.getElementById('contact-name').addEventListener('input', function() {
+                if (this.value.trim().length > 0) {
+                    hideFieldError('contact-name', 'name-error');
+                }
+            });
+            
+            document.getElementById('contact-phone').addEventListener('input', function() {
+                if (this.value.trim().length > 0) {
+                    hideFieldError('contact-phone', 'phone-error');
+                }
+            });
+            
+            document.getElementById('contact-email').addEventListener('input', function() {
+                if (this.value.trim().length > 0) {
+                    hideFieldError('contact-email', 'email-error');
+                }
+            });
+            
+            // Handle form submissions at specific steps
+            document.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    if (currentStep === 5 && postleitzahlInput && postleitzahlInput.value.length === 5) {
+                        // Postleitzahl step
+                        formData.postleitzahl = postleitzahlInput.value;
+                        nextStep();
+                    } else if (currentStep === 6) {
+                        // Contact form step
+                        if (validateContactForm()) {
+                            // Store contact data
+                            const inputs = document.querySelectorAll('.step[data-step="6"] input');
+                            inputs.forEach(input => {
+                                formData[input.name] = input.value;
+                            });
+                            
+                                // Send form data to server
+                                submitFormData(formData);
+                        }
+                    }
+                }
+            });
+            
+            // Final submission
+            function submitForm() {
+                console.log('Form submitted with data:', formData);
+                
+                // Here you would normally send the data to your server
+                // For demo purposes, we'll just show the success step
+                
+                // Reset form after 5 seconds
+                setTimeout(() => {
+                    currentStep = 1;
+                    formData = {};
+                    showStep(1);
+                    
+                    // Reset all inputs
+                    document.querySelectorAll('input').forEach(input => {
+                        input.value = '';
+                        input.classList.remove('border-red-500');
+                    });
+                    
+                    // Reset option cards
+                    document.querySelectorAll('.option-card').forEach(card => {
+                        card.classList.remove('border-green-500', 'bg-green-50');
+                        card.classList.add('border-gray-200', 'bg-gray-50');
+                    });
+                }, 5000);
+            }
+            
+            // Auto-submit on final step
+            setTimeout(() => {
+                if (currentStep === 10) {
+                    submitForm();
+                }
+            }, 3000);
+        });
+    </script>
+
+    <!-- Google Maps -->
+    <div class="w-full h-96">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.8985711062583!2d9.61788877728747!3d51.88349777190132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bac18810149d9b%3A0x4502f74ecc5fe035!2sG%C3%B6kbulut%20Dachdecker%20Meisterbetrieb!5e1!3m2!1sde!2sde!4v1760480131613!5m2!1sde!2sde"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-darker text-gray-400 py-16 md:py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Logo & Beschreibung -->
+                <div>
+                    <img src="images/logos/Dachdeckerei_Stadtoldendorf_GOEKBULUT_2022.png" alt="DDG Gökbulut Logo" class="h-16 w-auto mb-6 opacity-90">
+                    <p class="text-sm leading-relaxed">Ihr Dachdeckermeisterbetrieb in Stadtoldendorf seit 2000.</p>
+                </div>
+                
+                <!-- Rechtliches -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Rechtliches</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://dachdeckermeister-goekbulut.de/impressum/" class="hover:text-white transition-colors" target="_blank">Impressum</a></li>
+                        <li><a href="https://dachdeckermeister-goekbulut.de/datenschutzerklaerung/" class="hover:text-white transition-colors" target="_blank">Datenschutz</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontakt -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Kontakt</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+495532999537" class="hover:text-white transition-colors">05532 999537</a></li>
+                        <li><a href="mailto:info@dachdeckermeister-goekbulut.de" class="hover:text-white transition-colors">info@dachdeckermeister-goekbulut.de</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Adresse -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Adresse</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Dachdeckerei Gökbulut</li>
+                        <li>Hoopstr. 5</li>
+                        <li>37627 Stadtoldendorf</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2025 Dachdeckerei Gökbulut. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-brand-red text-white p-4 shadow-strong z-50 lg:hidden backdrop-blur-md">
+        <div class="flex items-center justify-between container mx-auto">
+            <div class="text-sm font-bold">
+                <div class="text-xs opacity-75">Jubiläums-Angebot</div>
+                <div>20% Rabatt sichern!</div>
+            </div>
+            <a href="#kontakt" class="bg-white text-brand-red px-6 py-3 rounded-full font-bold text-sm shadow-lg hover:bg-gray-100 transition-colors">
+                Angebot
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Reviews Carousel - True Infinite Loop (12 total: 6 original + 6 duplicates)
+        let currentIndex = 0;
+        const totalReviews = 12;
+        let reviewsPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+        let isTransitioning = false;
+
+        function updateCarousel() {
+            const carousel = document.getElementById('reviews-carousel');
+            const translateX = -(currentIndex * (100 / reviewsPerView));
+            carousel.style.transform = `translateX(${translateX}%)`;
+        }
+
+        function updateReviewsPerView() {
+            reviewsPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+            updateCarousel();
+        }
+
+        // Update on window resize
+        window.addEventListener('resize', updateReviewsPerView);
+
+        function nextReview() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            
+            currentIndex++;
+            updateCarousel();
+            
+            // Seamless reset when reaching the duplicates
+            setTimeout(() => {
+                if (currentIndex >= 6) { // After 6 reviews, reset to 0 (duplicates create seamless loop)
+                    currentIndex = 0;
+                    const carousel = document.getElementById('reviews-carousel');
+                    carousel.style.transition = 'none';
+                    updateCarousel();
+                    setTimeout(() => {
+                        carousel.style.transition = 'transform 0.5s ease-in-out';
+                        isTransitioning = false;
+                    }, 50);
+                } else {
+                    isTransitioning = false;
+                }
+            }, 500);
+        }
+
+        function previousReview() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            
+            if (currentIndex === 0) {
+                // Jump to position 6 (duplicates) then animate back to 5
+                currentIndex = 6;
+                const carousel = document.getElementById('reviews-carousel');
+                carousel.style.transition = 'none';
+                updateCarousel();
+                setTimeout(() => {
+                    currentIndex = 5;
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                    updateCarousel();
+                    setTimeout(() => isTransitioning = false, 500);
+                }, 50);
+            } else {
+                currentIndex--;
+                updateCarousel();
+                setTimeout(() => isTransitioning = false, 500);
+            }
+        }
+
+        // Auto-advance carousel every 4 seconds
+        setInterval(nextReview, 4000);
+    </script>
+</body>
+</html>
+</html>
+</html>
+</html>

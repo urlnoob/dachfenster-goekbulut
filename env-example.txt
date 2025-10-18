@@ -1,0 +1,9 @@
+# Environment Variables Example
+# Create a file called .env.local and copy these variables:
+
+# Zapier Webhook URL
+# Get this from your Zapier webhook: https://zapier.com/apps/webhooks/help
+ZAPIER_WEBHOOK_URL=https://hooks.zapier.com/hooks/catch/12345678/abcdefgh/
+
+# Optional: Add more configuration variables here
+# NODE_ENV=development

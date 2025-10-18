@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vielen Dank für Ihre Anfrage - DDG Gökbulut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#E40414',
+                        'brand-dark': '#201c1c',
+                        'brand-darker': '#1a1616'
+                    },
+                    boxShadow: {
+                        'brand': '0 4px 14px 0 rgba(228, 4, 20, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Jubiläums-Banner -->
+    <div class="bg-gradient-to-r from-brand-red via-red-600 to-brand-red text-white py-3 px-4 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm md:text-base font-semibold tracking-wide">
+                25 JAHRE FIRMENJUBILÄUM - 20% RABATT + 15% BAFA = 35% ERSPARNIS
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Thank You Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Success Icon -->
+            <div class="w-24 h-24 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center">
+                <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+
+            <!-- Main Message -->
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Angebot gesichert!
+            </h1>
+            
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+            </p>
+
+            <!-- Contact Info -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 max-w-2xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Nächste Schritte:</h2>
+                
+                <div class="space-y-4 text-left">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-6 h-6 bg-brand-red text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-sm font-bold">1</span>
+                        </div>
+                        <p class="text-gray-700">Wir rufen Sie an & vereinbaren einen Termin</p>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <div class="w-6 h-6 bg-brand-red text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-sm font-bold">2</span>
+                        </div>
+                        <p class="text-gray-700">Wir beraten Sie kostenlos vor Ort</p>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3">
+                        <div class="w-6 h-6 bg-brand-red text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span class="text-sm font-bold">3</span>
+                        </div>
+                        <p class="text-gray-700">Sie erhalten Ihr Angebot mit bis zu 35% Rabatt</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="bg-gray-100 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Bei Fragen erreichen Sie uns unter:</h3>
+                <div class="space-y-2 text-gray-600">
+                    <p><span class="font-semibold">Telefon:</span> <a href="tel:+495532999537" class="text-brand-red hover:underline">+49 5532 999537</a></p>
+                    <p><span class="font-semibold">E-Mail:</span> <a href="mailto:info@dachdeckermeister-goekbulut.de" class="text-brand-red hover:underline">info@dachdeckermeister-goekbulut.de</a></p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex justify-center">
+                <a href="index.html" class="bg-brand-red text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors duration-300">
+                    Zurück zur Startseite
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Logo & Beschreibung -->
+                <div>
+                    <img src="images/logos/Dachdeckerei_Stadtoldendorf_GOEKBULUT_2022.png" alt="DDG Gökbulut Logo" class="h-16 w-auto mb-6 opacity-90">
+                    <p class="text-sm leading-relaxed">Ihr Dachdeckermeisterbetrieb in Stadtoldendorf seit 2000.</p>
+                </div>
+                
+                <!-- Rechtliches -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Rechtliches</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://dachdeckermeister-goekbulut.de/impressum/" class="hover:text-white transition-colors" target="_blank">Impressum</a></li>
+                        <li><a href="https://dachdeckermeister-goekbulut.de/datenschutzerklaerung/" class="hover:text-white transition-colors" target="_blank">Datenschutz</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontakt -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Kontakt</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+495532999537" class="hover:text-white transition-colors">05532 999537</a></li>
+                        <li><a href="mailto:info@dachdeckermeister-goekbulut.de" class="hover:text-white transition-colors">info@dachdeckermeister-goekbulut.de</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Adresse -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Adresse</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>Dachdeckerei Gökbulut</li>
+                        <li>Hoopstr. 5</li>
+                        <li>37627 Stadtoldendorf</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2025 Dachdeckerei Gökbulut. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
