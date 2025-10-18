@@ -76,7 +76,7 @@ export default async function handler(req, res) {
       installationType: mapInstallationType(installationType || austausch_neueinbau),
       insulation: mapInsulation(insulation || isolierung),
       timestamp: new Date().toISOString(),
-      source: 'Website Formular'
+      source: 'LP-Formular'
     };
 
     // Send to Zapier webhook
