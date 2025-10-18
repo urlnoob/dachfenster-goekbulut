@@ -3,20 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vielen Dank für Ihre Anfrage - DDG Gökbulut</title>
+    <title>Vielen Dank für Ihre Anfrage</title>
     
     <!-- Facebook Pixel Code -->
     <script src="/js/facebook-pixel.js"></script>
     <script>
-        // Track Lead conversion on thank you page
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.facebookPixel) {
-                window.facebookPixel.trackLead({
-                    content_name: 'Dachfenster Anfrage - Thank You Page',
-                    content_category: 'Form Submission Success'
-                });
-            }
-        });
+        // Only track PageView on thank you page
+        // Lead event is already tracked on form submission
     </script>
     <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
