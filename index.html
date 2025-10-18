@@ -354,6 +354,7 @@
         <div class="container mx-auto px-4 md:px-6">
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-4 items-center">
                 <div class="animate-fade-in-up">
+                    
                     <div class="inline-flex items-center space-x-2 text-gray-800 border border-gray-800 px-4 md:px-6 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold mb-6 md:mb-8">
                         <svg class="w-4 h-4 md:w-5 md:h-5 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
@@ -411,6 +412,16 @@
                 </div>
                 
                 <div class="relative lg:ml-auto max-w-xl mt-8 lg:mt-0">
+                    <!-- Schwebender Störer über dem Bild -->
+                    <div class="absolute top-4 right-4 z-10 animate-bounce">
+                        <div class="bg-red-500 text-white px-4 py-2 rounded-full shadow-lg">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                                <span class="font-bold text-sm">Noch 18 von 25 Plätzen frei!</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="relative rounded-3xl overflow-hidden shadow-strong aspect-square">
                         <img src="images/photos/velux_studiofenster_137093-607660.jpg" alt="VELUX Dachfenster - Modernes Studiofenster" class="w-full h-full object-cover">
                     </div>
@@ -1700,7 +1711,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">Die Kosten variieren je nach Größe und Ausstattung. Ein Standard-Dachfenster inkl. Einbau liegt zwischen 1.500-3.000€. Wir erstellen Ihnen gerne ein kostenloses Angebot.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Die Kosten für ein Dachfenster hängen immer von Größe, Ausstattung und Einbauaufwand ab und lassen sich pauschal nie genau beziffern. In der Regel bewegen sie sich zwischen ca. 800 € und 3.000 € pro Fenster. Am besten holen Sie sich ein individuelles Angebot ein – aktuell können Sie dabei sogar bis zu 35 % sparen.</p>
                 </details>
                 
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
@@ -1710,7 +1721,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">In der Regel 1 Tag pro Fenster. Bei mehreren Fenstern entsprechend länger. Nach Auftragserteilung können wir meist innerhalb von 2 Wochen montieren.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Der Einbau eines Dachfensters dauert in der Regel zwischen einem halben und einem ganzen Arbeitstag. Ein einfacher Austausch ist meist schon nach wenigen Stunden erledigt, während ein komplett neuer Einbau etwas mehr Zeit beanspruchen kann.</p>
                 </details>
                 
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
@@ -1720,18 +1731,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">Wir sind zertifizierter Partner von VELUX und Roto - den führenden Herstellern für Dachfenster. Beide Marken bieten höchste Qualität und lange Garantien.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Wir verbauen ausschließlich VELUX und Roto - die führenden Premium-Hersteller für Dachfenster. Beide Marken stehen für höchste Qualität, Langlebigkeit und innovative Technologie.</p>
                 </details>
                 
-                <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
-                    <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
-                        <span>Gibt es eine Garantie?</span>
-                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">Ja! Auf unsere Handwerksleistung geben wir 5 Jahre Garantie. Die Hersteller-Garantie für VELUX/Roto Fenster beträgt je nach Modell 10-15 Jahre.</p>
-                </details>
                 
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
                     <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
@@ -2277,6 +2279,7 @@
 
         // Auto-advance carousel every 4 seconds
         setInterval(nextReview, 4000);
+
     </script>
 </body>
 </html>
