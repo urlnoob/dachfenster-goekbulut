@@ -1321,8 +1321,8 @@
             
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-[30%_70%] gap-8">
-                    <!-- Left Side: Benefits & Contact Person -->
-                    <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 flex flex-col justify-center">
+                    <!-- Left Side: Benefits & Contact Person - Hidden on mobile, shown after form -->
+                    <div class="hidden lg:block bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 flex flex-col justify-center">
                         <!-- Benefits List -->
                         <div class="space-y-4 mb-8">
                              <div class="flex items-center">
@@ -1359,8 +1359,8 @@
                              </div>
                         </div>
 
-                        <!-- Contact Person - Hidden on mobile -->
-                        <div class="hidden lg:flex items-center">
+                        <!-- Contact Person -->
+                        <div class="flex items-center">
                             <div class="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-white shadow-lg">
                                 <img src="images/photos/oemer-goekbulut.png" alt="Ömer Gökbulut" class="w-full h-full object-cover object-left">
                             </div>
@@ -1632,8 +1632,45 @@
                                 </div>
                             </div>
                             
-                            <!-- Contact Person - Mobile Only (shown after form) -->
-                            <div class="lg:hidden bg-white/90 backdrop-blur-sm rounded-2xl p-6 mt-6">
+                            <!-- Benefits & Contact Person - Mobile Only (shown after form) -->
+                            <div class="lg:hidden bg-white/80 backdrop-blur-sm rounded-3xl p-6 mt-6 shadow-soft border border-white/20">
+                                <!-- Benefits List -->
+                                <div class="space-y-4 mb-8">
+                                     <div class="flex items-center">
+                                         <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                             </svg>
+                                         </div>
+                                         <span class="text-gray-700"><strong>Anfrage in nur 45 Sekunden</strong> – Schnell & unkompliziert</span>
+                                     </div>
+                                     <div class="flex items-center">
+                                         <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                             </svg>
+                                         </div>
+                                         <span class="text-gray-700"><strong>Bis zu 35% Ersparnis</strong> – Jubiläums-Rabatt + BAFA-Förderung</span>
+                                     </div>
+                                     <div class="flex items-center">
+                                         <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                             </svg>
+                                         </div>
+                                         <span class="text-gray-700"><strong>Festpreis-Garantie</strong> – Keine versteckten Kosten</span>
+                                     </div>
+                                     <div class="flex items-center">
+                                         <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                             </svg>
+                                         </div>
+                                         <span class="text-gray-700"><strong>Persönliche Meister-Beratung</strong> – Direkt vom Dachdeckermeister</span>
+                                     </div>
+                                </div>
+
+                                <!-- Contact Person -->
                                 <div class="flex items-center">
                                     <div class="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-white shadow-lg">
                                         <img src="images/photos/oemer-goekbulut.png" alt="Ömer Gökbulut" class="w-full h-full object-cover object-left">
