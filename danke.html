@@ -11,13 +11,36 @@
     <link rel="apple-touch-icon" href="images/icons/favicon.png">
     
     <!-- Facebook Pixel Code -->
-    <script src="/js/facebook-pixel.js"></script>
     <script>
-        // Only track PageView on thank you page
-        // Lead event is already tracked on form submission
+        // Facebook Pixel ID - Replace with your actual Pixel ID
+        const FACEBOOK_PIXEL_ID = '227355603627068'; // Replace this with your actual Pixel ID
+        
+        // Facebook Pixel base code
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // Initialize pixel
+        fbq('init', FACEBOOK_PIXEL_ID);
+        fbq('track', 'PageView');
+        
+        // Track Lead event on thank you page
+        fbq('track', 'Lead', {
+            content_name: 'Dachfenster Anfrage - Thank You Page',
+            content_category: 'Form Submission',
+            value: 0,
+            currency: 'EUR'
+        });
+        
+        console.log('Lead event tracked on thank you page');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=227355603627068&ev=PageView&noscript=1"
     /></noscript>
     
     <script src="https://cdn.tailwindcss.com"></script>

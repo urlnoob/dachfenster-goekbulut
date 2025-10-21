@@ -37,22 +37,32 @@ class FacebookPixel {
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // Initialize pixel
+    // Initialize pixel immediately
     fbq('init', this.pixelId);
     fbq('track', 'PageView');
     
     this.isLoaded = true;
     console.log('Facebook Pixel initialized with ID:', this.pixelId);
+    
+    // Also add to window for global access
+    window.fbq = fbq;
   }
 
   track(eventName, parameters = {}) {
-    if (!this.isLoaded || !this.pixelId) {
-      console.warn('Facebook Pixel not loaded or configured');
+    if (!this.pixelId) {
+      console.warn('Facebook Pixel ID not configured');
       return;
     }
     
-    fbq('track', eventName, parameters);
-    console.log('Facebook Pixel event tracked:', eventName, parameters);
+    // Wait for pixel to load or track immediately
+    if (typeof fbq !== 'undefined') {
+      fbq('track', eventName, parameters);
+      console.log('Facebook Pixel event tracked:', eventName, parameters);
+    } else {
+      // Queue the event if pixel not loaded yet
+      console.log('Facebook Pixel not loaded yet, queuing event:', eventName, parameters);
+      // The pixel will process queued events when it loads
+    }
   }
 
   trackLead(parameters = {}) {
