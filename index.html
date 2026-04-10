@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dachdeckerei Gökbulut Stadtoldendorf | Dachfenster</title>
-    <meta name="description" content="Dachfenster Einbau & Austausch vom Meisterbetrieb. Jetzt bis zu 35% Aktions-Rabatt sichern!">
+    <meta name="description" content="Dachfenster Einbau & Austausch vom Meisterbetrieb. Jetzt bis zu 30% Ersparnis mit Frühjahrsaktion + BAFA sichern!">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
@@ -112,9 +112,9 @@
         }
 
         #step-content .option-card:hover {
-            border-color: #E40414 !important;
+            border-color: #16a34a !important;
             background: white !important;
-            box-shadow: 0 20px 25px -5px rgba(228, 4, 20, 0.1), 0 10px 10px -5px rgba(228, 4, 20, 0.04) !important;
+            box-shadow: 0 20px 25px -5px rgba(22, 163, 74, 0.12), 0 10px 10px -5px rgba(22, 163, 74, 0.06) !important;
             transform: translateY(-0.5rem) !important;
         }
 
@@ -131,7 +131,7 @@
         }
 
         #step-content .option-card:hover > div > div:first-child {
-            background: #fef2f2 !important;
+            background: #f0fdf4 !important;
         }
 
         #step-content .option-card svg {
@@ -144,8 +144,8 @@
         }
 
         #step-content .option-card:hover svg {
-            color: #E40414 !important;
-            stroke: #E40414 !important;
+            color: #16a34a !important;
+            stroke: #16a34a !important;
         }
 
         #step-content .option-card p, 
@@ -157,7 +157,7 @@
 
         #step-content .option-card:hover p,
         #step-content .option-card:hover h4 {
-            color: #E40414 !important;
+            color: #15803d !important;
         }
         
         /* Größere Cards (Step 3, 5, 6) */
@@ -181,7 +181,11 @@
         }
         
         .shadow-brand {
-            box-shadow: 0 10px 40px -10px rgba(228, 4, 20, 0.25);
+            box-shadow: 0 10px 40px -10px rgba(22, 163, 74, 0.22);
+        }
+
+        .shadow-cta-green {
+            box-shadow: 0 10px 40px -10px rgba(22, 163, 74, 0.35);
         }
         
         .shadow-soft {
@@ -215,7 +219,7 @@
         
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 20px 40px -8px rgba(228, 4, 20, 0.4);
+            box-shadow: 0 20px 40px -8px rgba(22, 163, 74, 0.45);
         }
         
         .card-hover {
@@ -228,7 +232,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #E40414 0%, #c50311 100%);
+            background: linear-gradient(135deg, #15803d 0%, #166534 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -257,11 +261,11 @@
         @keyframes pulse-subtle {
             0%, 100% {
                 transform: scale(1);
-                box-shadow: 0 10px 40px -10px rgba(228, 4, 20, 0.4);
+                box-shadow: 0 10px 40px -10px rgba(22, 163, 74, 0.35);
             }
             50% {
                 transform: scale(1.02);
-                box-shadow: 0 15px 50px -10px rgba(228, 4, 20, 0.6);
+                box-shadow: 0 15px 50px -10px rgba(22, 163, 74, 0.5);
             }
         }
         
@@ -281,15 +285,26 @@
         .animate-spin-slow {
             animation: spin-slow 3s linear infinite;
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animate-bounce,
+            .animate-spin-slow,
+            .animate-pulse {
+                animation: none !important;
+            }
+            .btn-primary:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
     
-    <!-- Jubiläums-Banner -->
-    <div class="bg-gradient-to-r from-brand-red via-red-600 to-brand-red text-white py-3 px-4 text-center">
+    <!-- Aktions-Banner -->
+    <div class="bg-brand-dark text-gray-300 py-2.5 px-4 text-center border-b border-white/5">
         <div class="container mx-auto">
-            <p class="text-sm md:text-base font-semibold tracking-wide">
-                25 JAHRE FIRMENJUBILÄUM - 20% RABATT + 15% BAFA = 35% ERSPARNIS
+            <p class="text-xs md:text-sm font-medium tracking-wide text-gray-200">
+                Frühjahrsaktion · 15 % Rabatt + bis zu 15 % BAFA = bis zu 30 % Ersparnis
             </p>
         </div>
     </div>
@@ -303,11 +318,11 @@
                 </div>
                 
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a href="#leistungen" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Leistungen</a>
-                    <a href="#über-uns" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Über uns</a>
-                    <a href="#ablauf" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Ablauf</a>
-                    <a href="#referenzen" class="text-gray-700 hover:text-brand-red font-medium transition-colors">Referenzen</a>
-                    <a href="#kontakt" class="bg-brand-red text-white px-7 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-brand">
+                    <a href="#leistungen" class="text-gray-700 hover:text-green-700 font-medium transition-colors">Leistungen</a>
+                    <a href="#über-uns" class="text-gray-700 hover:text-green-700 font-medium transition-colors">Über uns</a>
+                    <a href="#ablauf" class="text-gray-700 hover:text-green-700 font-medium transition-colors">Ablauf</a>
+                    <a href="#referenzen" class="text-gray-700 hover:text-green-700 font-medium transition-colors">Referenzen</a>
+                    <a href="#kontakt" class="bg-green-600 text-white px-7 py-3 rounded-full font-bold hover:bg-green-700 transition-all shadow-cta-green">
                         Angebot anfordern
                     </a>
                 </nav>
@@ -327,7 +342,7 @@
                     <!-- Menu panel -->
                     <div class="relative h-screen w-full bg-gray-50 shadow-2xl overflow-y-auto">
                         <!-- Header with gradient -->
-                        <div class="bg-gradient-to-br from-brand-red to-red-700 p-6 pb-8">
+                        <div class="bg-gradient-to-br from-green-800 to-green-950 p-6 pb-8">
                             <div class="flex justify-between items-center mb-6">
                                 <img src="images/logos/Dachdeckei in 37627 Stadtoldendorf Photovoltaik.png" alt="DDG Gökbulut" class="h-10 w-auto brightness-0 invert">
                                 <button id="mobile-menu-close" class="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200">
@@ -338,39 +353,39 @@
                             </div>
                             <div class="text-white">
                                 <h3 class="text-lg font-bold mb-1">Dachdeckerei Gökbulut</h3>
-                                <p class="text-red-100 text-sm">Ihr Meisterbetrieb vor Ort</p>
+                                <p class="text-green-100/90 text-sm">Ihr Meisterbetrieb vor Ort</p>
                             </div>
                         </div>
                         
                         <!-- Navigation -->
                         <div class="p-6 bg-white">
                             <nav class="space-y-2">
-                                <a href="#leistungen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
-                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="#leistungen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-green-800 hover:bg-green-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-green-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                                     </svg>
                                     Leistungen
                                 </a>
-                                <a href="#über-uns" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
-                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="#über-uns" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-green-800 hover:bg-green-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-green-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                                     </svg>
                                     Über uns
                                 </a>
-                                <a href="#ablauf" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
-                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="#ablauf" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-green-800 hover:bg-green-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-green-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                                     </svg>
                                     Ablauf
                                 </a>
-                                <a href="#referenzen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
-                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="#referenzen" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-green-800 hover:bg-green-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-green-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                     Referenzen
                                 </a>
-                                <a href="#kontakt" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-brand-red hover:bg-red-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
-                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-brand-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <a href="#kontakt" class="group flex items-center py-4 px-4 text-gray-800 bg-white hover:text-green-800 hover:bg-green-50 rounded-xl font-medium transition-all duration-200 hover:shadow-sm border border-gray-200">
+                                    <svg class="w-5 h-5 mr-3 text-gray-400 group-hover:text-green-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                     Kontakt
@@ -379,7 +394,7 @@
                             
                             <!-- CTA Button -->
                             <div class="mt-8 pt-6 border-t border-gray-100">
-                                <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Mobile Menu CTA'});" class="block w-full bg-gradient-to-r from-brand-red to-red-700 text-white py-4 px-6 rounded-xl font-bold text-center hover:from-red-600 hover:to-red-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                                <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Mobile Menu CTA'});" class="block w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-4 px-6 rounded-xl font-bold text-center hover:from-green-700 hover:to-green-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                                     Kostenloses Angebot
                                 </a>
                             </div>
@@ -388,13 +403,13 @@
                             <div class="mt-6 pt-6 border-t border-gray-100">
                                 <div class="space-y-3 text-sm text-gray-600">
                                     <div class="flex items-center">
-                                        <svg class="w-4 h-4 mr-2 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <svg class="w-4 h-4 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                         </svg>
                                         <span>+49 5532 999537</span>
                                     </div>
                                     <div class="flex items-center">
-                                        <svg class="w-4 h-4 mr-2 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <svg class="w-4 h-4 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                         </svg>
@@ -411,22 +426,22 @@
 
     <!-- Hero Section -->
     <section class="relative pt-8 pb-16 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-red-50/30 -z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-green-50/35 -z-10"></div>
         
         <div class="container mx-auto px-4 md:px-6">
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-4 items-center">
                 <div class="animate-fade-in-up">
                     
-                    <div class="inline-flex items-center space-x-2 text-gray-800 border border-gray-800 px-4 md:px-6 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold mb-6 md:mb-8">
-                        <svg class="w-4 h-4 md:w-5 md:h-5 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
+                    <div class="inline-flex items-center gap-2 text-gray-800 border border-gray-800 px-4 md:px-6 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-bold mb-6 md:mb-8 max-w-full">
+                        <svg class="w-4 h-4 md:w-5 md:h-5 flex-shrink-0 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                         </svg>
-                        <span>20% Rabatt + 15% BAFA-Förderung • Nur bis 31.12.2025</span>
+                        <span class="text-left leading-snug">Für Hausbesitzer mit älteren Dachfenstern</span>
                     </div>
                     
                     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark mb-6 leading-tight">
                         Alte Dachfenster?
-                        <span class="block gradient-text">Jetzt zum Festpreis tauschen!</span>
+                        <span class="block text-green-700">Jetzt zum Festpreis tauschen!</span>
                     </h1>
                     
                     <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 md:mb-10 leading-relaxed font-medium">
@@ -438,7 +453,7 @@
                             <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-base md:text-lg text-gray-700"><strong>20% Rabatt + 15% BAFA-Förderung</strong> – Bis zu 35% Ersparnis</span>
+                            <span class="text-base md:text-lg text-gray-700"><strong>15% Frühjahrs-Rabatt + bis zu 15% BAFA-Förderung</strong> – Bis zu 30% Ersparnis</span>
                         </div>
                         <div class="flex items-start space-x-2 md:space-x-3">
                             <svg class="w-5 h-5 md:w-6 md:h-6 text-green-500 flex-shrink-0 mt-0.5 md:mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -461,25 +476,28 @@
                     </div>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
-                            <span>Jetzt 35% Ersparnis sichern</span>
+                        <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg shadow-cta-green min-h-[56px]">
+                            <span>Kostenloses Angebot anfordern</span>
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                         </a>
-                        <a href="tel:05532999537" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Hero Phone Call CTA'});" class="inline-flex items-center justify-center bg-white border-2 border-gray-200 text-gray-800 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:border-brand-red hover:text-brand-red transition-all shadow-soft min-h-[56px]">
-                            <span>📞 Direkt anrufen</span>
+                        <a href="tel:05532999537" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Hero Phone Call CTA'});" class="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 text-gray-800 px-6 sm:px-8 py-4 sm:py-5 rounded-full font-bold text-base sm:text-lg hover:border-green-600 hover:text-green-700 transition-all shadow-soft min-h-[56px]">
+                            <svg class="w-5 h-5 flex-shrink-0 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>Direkt anrufen</span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="relative lg:ml-auto max-w-xl mt-8 lg:mt-0">
                     <!-- Schwebender Störer über dem Bild -->
-                    <div class="absolute top-4 right-4 z-10 animate-bounce">
-                        <div class="bg-red-500 text-white px-4 py-2 rounded-full shadow-lg">
+                    <div class="absolute top-4 right-4 z-10">
+                        <div class="bg-green-700 text-white px-4 py-2 rounded-full shadow-lg">
                             <div class="flex items-center space-x-2">
-                                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                                <span class="font-bold text-sm">Noch 4 von 25 Plätzen frei!</span>
+                                <div class="w-2 h-2 bg-white/90 rounded-full"></div>
+                                <span class="font-bold text-sm">Noch 28 von 30 Plätzen frei!</span>
                             </div>
                         </div>
                     </div>
@@ -534,7 +552,7 @@
                 <!-- Hauptüberschrift -->
                 <div class="text-center mb-16">
                     <h2 class="text-2xl sm:text-4xl md:text-5xl font-black text-brand-dark mb-6">
-                        20% Rabatt + 15% BAFA = <span class="text-brand-red">35% Ersparnis</span>
+                        15% Frühjahrs-Rabatt + bis zu 15% BAFA = <span class="text-green-700">bis zu 30% Ersparnis</span>
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                         Wir übernehmen die komplette Antragsstellung mit unserem zertifizierten Energieberater – Sie haben einen Ansprechpartner für alles!
@@ -543,22 +561,22 @@
 
                 <!-- Zwei Spalten: Rabatt & BAFA -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-                    <!-- Jubiläums-Rabatt -->
-                    <div class="bg-white rounded-2xl p-8 shadow-strong border border-red-100">
+                    <!-- Frühjahrs-Rabatt -->
+                    <div class="bg-white rounded-2xl p-8 shadow-strong border border-green-100">
                         <div class="flex items-center space-x-4 mb-6">
-                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
                                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-black text-brand-dark">20% Jubiläums-Rabatt</h3>
-                                <p class="text-red-600 font-semibold">Nur bis 31.12.2025</p>
+                                <h3 class="text-2xl font-black text-brand-dark">15% Frühjahrs-Rabatt</h3>
+                                <p class="text-green-600 font-semibold">Frühjahrsaktion</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-6">Unser 25-jähriges Firmenjubiläum schenken wir Ihnen! Direkter Nachlass auf alle Dachfenster-Modelle von VELUX und Roto.</p>
-                        <div class="bg-red-50 rounded-lg p-4 border border-red-200">
-                            <p class="text-sm text-red-700 font-semibold">✓ Gilt für alle Dachfenster-Modelle</p>
+                        <p class="text-gray-600 mb-6">Direkter Nachlass auf alle Dachfenster-Modelle von VELUX und Roto – passend zur Saison für Ihr Dach.</p>
+                        <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+                            <p class="text-sm text-green-700 font-semibold">✓ Gilt für alle Dachfenster-Modelle</p>
                         </div>
                     </div>
 
@@ -616,13 +634,13 @@
 
                 <!-- CTA -->
                 <div class="text-center">
-                    <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Hero CTA'});" class="btn-primary inline-flex items-center justify-center bg-brand-red text-white px-6 sm:px-8 py-4 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-brand min-h-[56px]">
+                    <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Hero CTA'});" class="btn-primary inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-cta-green min-h-[56px]">
                         <span>Kostenloses Angebot anfordern</span>
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                         </svg>
                     </a>
-                    <p class="text-gray-600 text-sm mt-3 font-medium">20% Rabatt + 15% BAFA bis 31.12.2025</p>
+                    <p class="text-gray-600 text-sm mt-3 font-medium">15% Frühjahrs-Rabatt + bis zu 15% BAFA-Förderung</p>
                 </div>
             </div>
         </div>
@@ -728,13 +746,13 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="#kontakt" class="inline-flex items-center justify-center bg-brand-red text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg shadow-brand hover:bg-red-700 transition-all">
+                <a href="#kontakt" class="btn-primary inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg shadow-cta-green transition-all">
                     <span>Kostenloses Angebot anfordern</span>
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                     </svg>
                 </a>
-                <p class="text-gray-600 text-sm mt-3 font-medium">20% Rabatt + 15% BAFA bis 31.12.2025</p>
+                <p class="text-gray-600 text-sm mt-3 font-medium">15% Frühjahrs-Rabatt + bis zu 15% BAFA-Förderung</p>
             </div>
         </div>
     </section>
@@ -746,20 +764,20 @@
                 <!-- Stats Banner -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mb-10 pb-10 border-b border-white/10">
                     <div class="text-center">
-                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">25</div>
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-white">25</div>
                         <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Jahre Firmenjubiläum</div>
                     </div>
                     <div class="text-center relative">
-                        <div class="absolute top-0 right-0 md:right-2 bg-brand-red text-white text-xs px-2 py-0.5 rounded-full font-bold">NEU</div>
-                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">35%</div>
-                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Max. Ersparnis</div>
+                        <div class="absolute top-0 right-0 md:right-2 bg-green-600 text-white text-xs px-2 py-0.5 rounded-full font-bold">NEU</div>
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-white">30%</div>
+                        <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Frühjahr + BAFA</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">1000+</div>
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-white">1000+</div>
                         <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Zufriedene Kunden</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-4xl md:text-5xl font-black mb-2 text-brand-red">500+</div>
+                        <div class="text-4xl md:text-5xl font-black mb-2 text-white">500+</div>
                         <div class="text-xs md:text-sm text-gray-300 uppercase tracking-wide font-semibold">Dachfenster verbaut</div>
                     </div>
                 </div>
@@ -824,9 +842,9 @@
         <div class="container mx-auto px-4 md:px-6">
             
             <div class="text-center mb-16">
-                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Über uns</p>
+                <p class="text-green-700 font-semibold uppercase tracking-wider text-sm mb-4">Über uns</p>
                 <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">Dachdeckermeisterbetrieb Gökbulut</h2>
-                <p class="text-xl text-brand-red font-bold max-w-2xl mx-auto">25 Jahre Handwerkstradition • Über 1.000 zufriedene Kunden • Meisterqualität garantiert</p>
+                <p class="text-xl text-green-800 font-bold max-w-2xl mx-auto">25 Jahre Handwerkstradition • Über 1.000 zufriedene Kunden • Meisterqualität garantiert</p>
             </div>
             
             <!-- Meister-Vorstellung (Platz für Meister-Bild) -->
@@ -841,14 +859,14 @@
                     
                     <!-- Rechts: Badge + Überschrift + Subhead + Text + Points -->
                     <div class="flex-1">
-                        <div class="inline-flex items-center bg-brand-red text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                        <div class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
                             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                             </svg>
                             Inhaber & Dachdeckermeister
                         </div>
                         <h3 class="text-3xl md:text-4xl font-black text-brand-dark mb-2">Ömer Gökbulut</h3>
-                        <p class="text-xl text-brand-red font-semibold mb-6">Ihr persönlicher Ansprechpartner</p>
+                        <p class="text-xl text-green-800 font-semibold mb-6">Ihr persönlicher Ansprechpartner</p>
                         
                         <p class="text-gray-700 leading-relaxed text-lg">
                             Bei uns zählt noch die Handschlagqualität. Ehrlichkeit und Vertrauen sind das Fundament unseres Handwerks. 
@@ -862,7 +880,7 @@
             <!-- Qualität & Zertifikate -->
             <div class="bg-white rounded-3xl p-8 md:p-12 shadow-strong border border-gray-100 mb-16 max-w-6xl mx-auto relative">
                 <!-- 25 Jahre Badge -->
-                <div class="absolute -top-4 -right-4 w-24 h-24 bg-brand-red text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" style="animation: pulse-scale 2s ease-in-out infinite;">
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" style="animation: pulse-scale 2s ease-in-out infinite;">
                     <div class="text-center">
                         <svg class="w-5 h-5 mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -959,9 +977,9 @@
     <section id="ablauf" class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4 md:px-6">
             <div class="text-center mb-16">
-                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">35% Ersparnis sichern</p>
+                <p class="text-green-700 font-semibold uppercase tracking-wider text-sm mb-4">Bis zu 30% Ersparnis sichern</p>
                 <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">So einfach wird's gemacht</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">20% Jubiläums-Rabatt + bis zu 15% BAFA-Förderung – Alles aus einer Hand</p>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">15% Frühjahrs-Rabatt + bis zu 15% BAFA-Förderung – Alles aus einer Hand</p>
             </div>
             
             <div class="max-w-7xl mx-auto space-y-8">
@@ -977,10 +995,10 @@
                             </div>
                             <h3 class="text-2xl font-bold text-white mb-3">1. Kostenloses Angebot anfordern</h3>
                             <p class="text-gray-300 leading-relaxed mb-6">
-                                Unverbindliche Anfrage oder direkt anrufen. Wir beraten Sie persönlich und erstellen Ihr individuelles Angebot mit 20% Rabatt + bis zu 15% BAFA-Förderung.
+                                Unverbindliche Anfrage oder direkt anrufen. Wir beraten Sie persönlich und erstellen Ihr individuelles Angebot mit 15% Frühjahrs-Rabatt + bis zu 15% BAFA-Förderung.
                             </p>
                         </div>
-                        <a href="#kontakt" class="inline-flex items-center bg-brand-red text-white px-4 sm:px-6 py-3 sm:py-3 rounded-lg font-bold hover:bg-red-700 transition-colors text-sm sm:text-base min-h-[48px] sm:min-h-[auto]">
+                        <a href="#kontakt" class="btn-primary inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-3 sm:py-3 rounded-lg font-bold transition-colors text-sm sm:text-base min-h-[48px] sm:min-h-[auto] shadow-cta-green">
                             <span>Kostenloses Angebot anfordern</span>
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -1055,7 +1073,7 @@
     <section id="referenzen" class="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4 md:px-6">
             <div class="text-center mb-16">
-                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Kundenstimmen</p>
+                <p class="text-green-700 font-semibold uppercase tracking-wider text-sm mb-4">Kundenstimmen</p>
                 <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6">Das sagen unsere Kunden</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">Über 1.000 zufriedene Kunden in der Region</p>
             </div>
@@ -1064,12 +1082,12 @@
             <div class="max-w-6xl mx-auto relative">
                 <!-- Navigation Buttons - Outside -->
                 <button onclick="previousReview()" class="hidden md:block absolute -left-16 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10">
-                    <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
                 </button>
                 <button onclick="nextReview()" class="hidden md:block absolute -right-16 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 z-10">
-                    <svg class="w-6 h-6 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
@@ -1077,12 +1095,12 @@
                 <!-- Mobile Navigation -->
                 <div class="flex md:hidden justify-center space-x-2 mb-6">
                     <button onclick="previousReview()" class="bg-white rounded-full p-2 shadow-lg border border-gray-200">
-                        <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                     <button onclick="nextReview()" class="bg-white rounded-full p-2 shadow-lg border border-gray-200">
-                        <svg class="w-5 h-5 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
@@ -1101,7 +1119,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Bernd</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1123,7 +1141,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Daniel Meyer</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1145,7 +1163,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Ingrid Kieczka</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1167,7 +1185,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Lars Grohmann</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1189,7 +1207,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Jürgen Niegisch</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1211,7 +1229,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Seyfi Özaydin</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1233,7 +1251,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Bernd</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1255,7 +1273,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Daniel Meyer</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1277,7 +1295,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Ingrid Kieczka</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1299,7 +1317,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Lars Grohmann</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1321,7 +1339,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Jürgen Niegisch</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1343,7 +1361,7 @@
                                         <div class="font-bold text-brand-dark text-lg">Seyfi Özaydin</div>
                                     </div>
                                 </div>
-                                <div class="flex text-brand-red mb-4">
+                                <div class="flex text-amber-400 mb-4">
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -1367,7 +1385,7 @@
             <div class="text-center mb-16">
                 <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">Kostenloses Angebot</p>
                 <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-brand-dark mb-6">Sichere dir jetzt dein unverbindliches Angebot</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">In nur wenigen Schritten zu deinem persönlichen Dachfenster-Angebot mit bis zu 35% Ersparnis</p>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">In nur wenigen Schritten zu deinem persönlichen Dachfenster-Angebot mit bis zu 30% Ersparnis</p>
             </div>
             
             <div class="max-w-7xl mx-auto">
@@ -1390,7 +1408,7 @@
                                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                      </svg>
                                  </div>
-                                 <span class="text-gray-700"><strong>Bis zu 35% Ersparnis</strong> – Jubiläums-Rabatt + BAFA-Förderung</span>
+                                 <span class="text-gray-700"><strong>Bis zu 30% Ersparnis</strong> – Frühjahrs-Rabatt + BAFA-Förderung</span>
                              </div>
                              <div class="flex items-center">
                                  <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -1428,7 +1446,7 @@
                         <!-- Progress -->
                         <div class="mb-8">
                             <div class="w-full bg-gray-200/60 rounded-full h-2 shadow-inner backdrop-blur-sm">
-                                <div class="bg-gradient-to-r from-brand-red via-red-600 to-red-700 h-2 rounded-full transition-all duration-700 shadow-lg" id="progress-bar"></div>
+                                <div class="bg-gradient-to-r from-green-600 via-green-500 to-green-700 h-2 rounded-full transition-all duration-700 shadow-lg" id="progress-bar"></div>
                             </div>
                         </div>
 
@@ -1438,28 +1456,28 @@
                             <div class="step" data-step="1">
                                 <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Welche Dachform hat das Gebäude?</h3>
                                 <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6">
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="satteldach">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="satteldach">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_ne0ex0ne0ex0ne0e-removebg-preview.png" alt="Satteldach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Satteldach</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Satteldach</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="walmdach">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="walmdach">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_2xremw2xremw2xre-removebg-preview.png" alt="Walmdach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Walmdach</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Walmdach</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="flachdach">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="flachdach">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_rjrdr2rjrdr2rjrd-removebg-preview.png" alt="Flachdach" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Flachdach</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Flachdach</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="sonstiges">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="sonstiges">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Sonstiges" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Sonstiges</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Sonstiges</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1470,28 +1488,28 @@
                                 <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wie viele Dachfenster benötigen Sie?</h3>
                                 
                                 <div class="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6">
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="1">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="1">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_swpr4aswpr4aswpr-removebg-preview.png" alt="1 Dachfenster" class="w-8 h-8 md:w-24 md:h-24 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">1</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">1</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="2-4">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="2-4">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_gi51y0gi51y0gi51-removebg-preview.png" alt="2-4 Dachfenster" class="w-8 h-8 md:w-24 md:h-24 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">2 - 4</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">2 - 4</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="mehr-als-4">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="mehr-als-4">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_z8owbzz8owbzz8ow-removebg-preview.png" alt="Mehr als 4 Dachfenster" class="w-8 h-8 md:w-28 md:h-28 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Mehr als 4</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Mehr als 4</p>
                                         </div>
                                     </div>
-                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-brand-red hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="weiss-nicht">
+                                    <div class="option-card group p-3 md:p-6 bg-white border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-green-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-value="weiss-nicht">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Weiß nicht" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
-                                            <p class="font-semibold text-gray-800 group-hover:text-brand-red transition-colors duration-300 ml-3 md:ml-0 md:text-center">Weiß nicht</p>
+                                            <p class="font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300 ml-3 md:ml-0 md:text-center">Weiß nicht</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1509,7 +1527,7 @@
                                 <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Handelt es sich um einen Neubau oder Austausch?</h3>
                                 
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
-                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="austausch">
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="austausch">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_6uqt5e6uqt5e6uqt-removebg-preview.png" alt="Austausch" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1518,7 +1536,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="neueinbau">
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="neueinbau">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_pbxv9opbxv9opbxv-removebg-preview.png" alt="Neueinbau" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1527,7 +1545,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="beides">
+                                    <div class="option-card p-3 md:p-8 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 backdrop-blur-sm" data-value="beides">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_gg6u3vgg6u3vgg6u-removebg-preview.png" alt="Beides" class="w-8 h-8 md:w-20 md:h-20 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1551,7 +1569,7 @@
                                 <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wie stark sollen Ihre neuen Dachfenster isoliert sein?</h3>
                                 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="einfach">
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="einfach">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_kdwkgzkdwkgzkdwk-removebg-preview.png" alt="Einfach-Verglasung" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1560,7 +1578,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="zweifach">
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="zweifach">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_kd2v06kd2v06kd2v-removebg-preview.png" alt="Zweifach-Verglasung" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1568,7 +1586,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm relative" data-value="dreifach">
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm relative" data-value="dreifach">
                                         <!-- Förderfähig Badge -->
                                         <div class="absolute -top-2 -right-2 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
                                             Förderfähig
@@ -1580,7 +1598,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-brand-red hover:bg-red-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="sonstiges">
+                                    <div class="option-card p-3 md:p-6 border border-gray-200/60 rounded-2xl cursor-pointer hover:border-green-600 hover:bg-green-50/80 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm" data-value="sonstiges">
                                         <div class="flex items-center md:block">
                                             <img src="images/icons/Gemini_Generated_Image_fdidd9fdidd9fdid-removebg-preview.png" alt="Sonstiges" class="w-8 h-8 md:w-16 md:h-16 md:mx-auto mb-0 md:mb-4 object-contain flex-shrink-0">
                                             <div class="ml-3 md:ml-0 md:text-center">
@@ -1605,7 +1623,7 @@
                                 <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-8 text-center">Wo soll der Einbau der Dachfenster erfolgen?</h3>
                                 
                                 <div class="max-w-md mx-auto mb-8">
-                                    <input type="text" id="postleitzahl" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-center text-lg sm:text-xl font-semibold min-h-[56px]" placeholder="Postleitzahl eingeben..." maxlength="5">
+                                    <input type="text" id="postleitzahl" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-green-600 focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-center text-lg sm:text-xl font-semibold min-h-[56px]" placeholder="Postleitzahl eingeben..." maxlength="5">
                                     <p class="text-sm text-gray-600 text-center mt-2">Bitte geben Sie hier Ihre 5-stellige PLZ an.</p>
                                     <p id="plz-error" class="text-sm text-red-600 text-center mt-2 hidden">Bitte geben Sie eine gültige 5-stellige Postleitzahl ein.</p>
                                 </div>
@@ -1614,7 +1632,7 @@
                                     <button type="button" class="step-back-btn text-brand-red hover:text-red-700 text-sm font-semibold hover:underline">
                                         ← zurück
                                     </button>
-                                    <button type="button" id="plz-weiter-btn" class="bg-brand-red text-white px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
+                                    <button type="button" id="plz-weiter-btn" class="bg-green-600 text-white px-4 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
                                         Weiter
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1645,15 +1663,15 @@
 
                                 <div class="max-w-md mx-auto space-y-3">
                                     <div>
-                                        <input type="text" name="name" id="contact-name" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Vor- und Nachname" required autocomplete="name">
+                                        <input type="text" name="name" id="contact-name" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-green-600 focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Vor- und Nachname" required autocomplete="name">
                                         <p id="name-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie Ihren Namen ein.</p>
                                     </div>
                                     <div>
-                                        <input type="tel" name="phone" id="contact-phone" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Telefonnummer" required autocomplete="tel">
+                                        <input type="tel" name="phone" id="contact-phone" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-green-600 focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="Telefonnummer" required autocomplete="tel">
                                         <p id="phone-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie eine gültige Telefonnummer ein.</p>
                                     </div>
                                     <div>
-                                        <input type="email" name="email" id="contact-email" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-brand-red focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="E-Mail" required autocomplete="email">
+                                        <input type="email" name="email" id="contact-email" class="w-full px-6 py-5 sm:py-4 border border-gray-300/60 rounded-2xl focus:border-green-600 focus:outline-none focus:shadow-xl focus:bg-white/90 transition-all duration-300 backdrop-blur-sm text-base sm:text-lg min-h-[56px]" placeholder="E-Mail" required autocomplete="email">
                                         <p id="email-error" class="text-sm text-red-600 mt-1 hidden">Bitte geben Sie eine gültige E-Mail-Adresse ein.</p>
                                     </div>
 
@@ -1673,7 +1691,7 @@
                                     </div>
                                     
                                     <div class="flex justify-center">
-                                        <button type="button" id="contact-weiter-btn" class="bg-brand-red text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
+                                        <button type="button" id="contact-weiter-btn" class="bg-green-600 text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-full font-semibold text-sm sm:text-base hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 min-h-[48px] sm:min-h-[56px]">
                                             Kostenloses Angebot anfordern
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -1701,7 +1719,7 @@
                                                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                              </svg>
                                          </div>
-                                         <span class="text-gray-700"><strong>Bis zu 35% Ersparnis</strong> – Jubiläums-Rabatt + BAFA-Förderung</span>
+                                         <span class="text-gray-700"><strong>Bis zu 30% Ersparnis</strong> – Frühjahrs-Rabatt + BAFA-Förderung</span>
                                      </div>
                                      <div class="flex items-center">
                                          <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -1737,7 +1755,7 @@
                             <!-- Final Success Step -->
                             <div class="step hidden" data-step="8">
                                 <div class="text-center">
-                                    <div class="w-20 h-20 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                                         <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                         </svg>
@@ -1750,7 +1768,7 @@
                                             <li>• Unser Experte ruft Sie an</li>
                                             <li>• Kostenlose Vor-Ort-Beratung</li>
                                             <li>• Individuelles Angebot</li>
-                                            <li>• 35% Ersparnis durch Jubiläumsrabatt + BAFA</li>
+                                            <li>• Bis zu 30% Ersparnis durch Frühjahrs-Rabatt + BAFA</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1780,7 +1798,7 @@
     <!-- Wir sagen Danke! -->
     <section class="py-16 md:py-20 lg:py-28 bg-white">
         <div class="container mx-auto px-4 md:px-6">
-            <!-- 25 Jahre Jubiläum - Partner Glückwünsche -->
+            <!-- Partner-Glückwünsche (Firmengeschichte) -->
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
                     <h3 class="text-3xl md:text-4xl font-black text-brand-dark mb-6">Wir sagen Danke!</h3>
@@ -1811,7 +1829,7 @@
     <section class="py-16 md:py-20 lg:py-28 bg-white">
         <div class="container mx-auto px-4 md:px-6">
             <div class="text-center mb-16">
-                <p class="text-brand-red font-semibold uppercase tracking-wider text-sm mb-4">FAQ</p>
+                <p class="text-green-700 font-semibold uppercase tracking-wider text-sm mb-4">FAQ</p>
                 <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-6">Häufige Fragen</h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">Alles, was Sie wissen müssen</p>
             </div>
@@ -1820,17 +1838,17 @@
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
                     <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
                         <span>Was kostet ein neues Dachfenster?</span>
-                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-green-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">Die Kosten für ein Dachfenster hängen immer von Größe, Ausstattung und Einbauaufwand ab und lassen sich pauschal nie genau beziffern. In der Regel bewegen sie sich zwischen ca. 800 € und 3.000 € pro Fenster. Am besten holen Sie sich ein individuelles Angebot ein – aktuell können Sie dabei sogar bis zu 35 % sparen.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Die Kosten für ein Dachfenster hängen immer von Größe, Ausstattung und Einbauaufwand ab und lassen sich pauschal nie genau beziffern. In der Regel bewegen sie sich zwischen ca. 800 € und 3.000 € pro Fenster. Am besten holen Sie sich ein individuelles Angebot ein – aktuell können Sie dabei sogar bis zu 30 % sparen.</p>
                 </details>
                 
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
                     <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
                         <span>Wie lange dauert der Einbau?</span>
-                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-green-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
@@ -1840,7 +1858,7 @@
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
                     <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
                         <span>Welche Marken bieten Sie an?</span>
-                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-green-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
@@ -1851,11 +1869,11 @@
                 <details class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 group">
                     <summary class="font-bold text-brand-dark text-lg cursor-pointer flex items-center justify-between">
                         <span>Kann ich alte Fenster austauschen lassen?</span>
-                        <svg class="w-6 h-6 text-brand-red group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-green-700 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </summary>
-                    <p class="mt-4 text-gray-600 leading-relaxed">Absolut! Wir tauschen auch alte Dachfenster gegen moderne, energieeffiziente Modelle aus. Bringen Sie einfach das Typenschild mit für ein genaues Angebot.</p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Absolut! Wir tauschen auch alte Dachfenster gegen moderne, energieeffiziente Modelle aus. Beim Rückruf fragen wir Sie nach den nötigen Details – ein Blick auf das Typenschild an Ihrem Fenster hilft uns dann für ein genaues Angebot.</p>
                 </details>
             </div>
         </div>
@@ -2048,11 +2066,11 @@
                 plzWeiterBtn.addEventListener('click', function() {
                     if (postleitzahlInput && postleitzahlInput.value.length === 5) {
                         formData.postleitzahl = postleitzahlInput.value;
-                        postleitzahlInput.classList.remove('border-red-500');
+                        postleitzahlInput.classList.remove('border-green-600');
                         plzError.classList.add('hidden');
                         nextStep();
                     } else {
-                        postleitzahlInput.classList.add('border-red-500');
+                        postleitzahlInput.classList.add('border-green-600');
                         plzError.classList.remove('hidden');
                     }
                 });
@@ -2063,7 +2081,7 @@
                 postleitzahlInput.addEventListener('input', function() {
                     if (this.value.length > 0) {
                         plzError.classList.add('hidden');
-                        postleitzahlInput.classList.remove('border-red-500');
+                        postleitzahlInput.classList.remove('border-green-600');
                     }
                 });
             }
@@ -2075,10 +2093,10 @@
                 
                 inputs.forEach(input => {
                     if (!input.value.trim()) {
-                        input.classList.add('border-red-500');
+                        input.classList.add('border-green-600');
                         isValid = false;
                     } else {
-                        input.classList.remove('border-red-500');
+                        input.classList.remove('border-green-600');
                     }
                 });
                 
@@ -2101,14 +2119,14 @@
             function showFieldError(fieldId, errorId) {
                 const field = document.getElementById(fieldId);
                 const error = document.getElementById(errorId);
-                field.classList.add('border-red-500');
+                field.classList.add('border-green-600');
                 error.classList.remove('hidden');
             }
             
             function hideFieldError(fieldId, errorId) {
                 const field = document.getElementById(fieldId);
                 const error = document.getElementById(errorId);
-                field.classList.remove('border-red-500');
+                field.classList.remove('border-green-600');
                 error.classList.add('hidden');
             }
             
@@ -2181,20 +2199,15 @@
             document.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     if (currentStep === 5 && postleitzahlInput && postleitzahlInput.value.length === 5) {
-                        // Postleitzahl step
                         formData.postleitzahl = postleitzahlInput.value;
                         nextStep();
                     } else if (currentStep === 6) {
-                        // Contact form step
                         if (validateContactForm()) {
-                            // Store contact data
                             const inputs = document.querySelectorAll('.step[data-step="6"] input');
                             inputs.forEach(input => {
                                 formData[input.name] = input.value;
                             });
-                            
-                                // Send form data to server
-                                submitFormData(formData);
+                            submitFormData(formData);
                         }
                     }
                 }
@@ -2216,7 +2229,7 @@
                     // Reset all inputs
                     document.querySelectorAll('input').forEach(input => {
                         input.value = '';
-                        input.classList.remove('border-red-500');
+                        input.classList.remove('border-green-600');
                     });
                     
                     // Reset option cards
@@ -2295,25 +2308,25 @@
 
     <!-- Sticky Mobile CTA -->
     <!-- Mobile/Tablet Sticky Bar -->
-    <div class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-brand-red to-red-700 text-white shadow-2xl z-50 lg:hidden backdrop-blur-md border-t border-red-600">
+    <div class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-600 to-green-800 text-white shadow-2xl z-50 lg:hidden backdrop-blur-md border-t border-green-700">
         <div class="container mx-auto px-4 py-3">
             <div class="flex items-center justify-between">
                 <!-- Left: Offer Info -->
                 <div class="flex-1 min-w-0">
                     <div class="flex items-center space-x-3">
                         <div class="flex-shrink-0">
-                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                            <div class="w-2 h-2 bg-white/90 rounded-full"></div>
                         </div>
                         <div class="min-w-0">
-                            <div class="text-xs opacity-90 font-medium">Nur noch 4 Plätze frei!</div>
-                            <div class="text-sm font-bold truncate">Bis zu 35% sparen</div>
+                            <div class="text-xs opacity-90 font-medium">Noch 28 von 30 Plätzen frei!</div>
+                            <div class="text-sm font-bold truncate">Bis zu 30% sparen</div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Right: CTA Button -->
                 <div class="flex-shrink-0 ml-4">
-                    <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Mobile Sticky CTA'});" class="bg-white text-brand-red px-4 py-2.5 rounded-full font-bold text-sm shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95 whitespace-nowrap">
+                    <a href="#kontakt" onclick="if(window.trackInitiateCheckout) window.trackInitiateCheckout({content_name: 'Mobile Sticky CTA'});" class="bg-white text-green-700 px-4 py-2.5 rounded-full font-bold text-sm shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-200 transform hover:scale-105 active:scale-95 whitespace-nowrap">
                         Jetzt sichern
                     </a>
                 </div>
@@ -2404,7 +2417,4 @@
 
     </script>
 </body>
-</html>
-</html>
-</html>
 </html>
